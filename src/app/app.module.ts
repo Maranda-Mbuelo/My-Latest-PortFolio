@@ -14,6 +14,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { OffersComponent } from './profile/offers/offers.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { AdminAddProjectComponent } from './admin/admin-add-project/admin-add-project.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     ProfileComponent,
     OffersComponent,
     ProjectsComponent,
-    TimelineComponent
+    TimelineComponent,
+    AdminAddProjectComponent
   ],
   imports: [
     BrowserModule,
