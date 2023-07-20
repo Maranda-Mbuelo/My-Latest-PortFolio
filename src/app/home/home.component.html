@@ -1,8 +1,8 @@
-<div class="min-h-screen flex flex-col">
+<div *ngIf="video" class="min-h-screen flex flex-col">
     <app-navbar></app-navbar>
     
     <section class="flex-grow flex items-center justify-center bg-gray-200 relative">
-      <video class="video-slide absolute top-0 left-0 w-full h-full object-cover z-0" [src]="video" autoplay muted loop></video>
+      <video class="video-slide absolute top-0 left-0 w-full h-full object-cover z-0" [src]="video" [autoplay]="'autoplay'" muted loop></video>
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center z-10">
         <div class="w-full md:w-1/2">
           <div class="text-left">
@@ -27,5 +27,5 @@
           
       </div>
     </section>
-  </div>
+</div>
   

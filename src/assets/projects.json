@@ -19,6 +19,27 @@
       ]
     },
     {
+      "projectName": "Tech News App",
+      "projectType": "Angular",
+      "typeIcon": "Angular",
+      "projectImages": [
+        {
+          "image1": "/assets/images/technews(1).png",
+          "image2": "/assets/images/blog-app(2)",
+          "image3": "/assets/images/blog-app(3)",
+          "image4": "/assets/images/blog-app(4)"
+        }
+      ],
+      "projectInformation": "Tech News is an advanced Angular application that delivers the latest and most relevant news from the rapidly evolving world of technology and beyond. <br>With Tech News, you'll have access to real-time data from reliable APIs, thanks to Angular's robust HTTP capabilities. <br>Explore various news categories tailored to your interests, covering topics like artificial intelligence, cybersecurity, gadgets, and software developments. The user-friendly search feature makes finding specific news articles a breeze. <br>Tech News is a continuous work-in-progress, continuously evolving to provide a seamless user experience. We are currently implementing essential security features, including guards and authentication, to ensure a safe browsing environment for our valued users.",
+      "projectGitHubRepo": "",
+      "steps": [
+        "Step 1: Planning and Requirements Gathering",
+        "Step 2: Frontend Development with Angular",
+        "Step 3: Backend Development with ASP.NET",
+        "Step 4: Integration and Testing"
+      ]
+      },
+    {
       "projectName": "Blog App",
       "projectType": "Angular",
       "typeIcon": "Angular",
@@ -40,27 +61,6 @@
       ]
     },
     {
-      "projectName": "Blog-App C# Api",
-      "projectType": "C#, .NET CORE & ASP.NET",
-      "typeIcon": "C#",
-      "projectImages": [
-        {
-          "image1": "/assets/images/BrightMarsh(1).png",
-          "image2": "/assets/images/blog-app-api(2)",
-          "image3": "/assets/images/blog-app-api(3)",
-          "image4": "/assets/images/blog-app-api(4)"
-        }
-      ],
-      "projectInformation": "My C# CRUD API serves as the backend for my Angular blog app. Built using ASP.NET and Microsoft NuGet packages, this API provides robust functionality for managing blog posts. With seamless integration and efficient database management, the API allows users to perform CRUD (Create, Read, Update, Delete) operations on blog posts. It enables the creation of database tables, implementation of migrations, and establishes a secure connection between the Angular frontend and the backend database. Additionally, the API supports uploading pictures, providing a rich multimedia experience for blog authors and readers. Whether it's creating, editing, or deleting blog posts, this C# CRUD API offers a reliable and scalable solution for your Angular blog app.<br><br>You can learn more about my C# CRUD API for the blog app by visiting the github link: <a href=\"https://your-crud-api-website.com\">blog api</a>",
-      "projectGitHubRepo": "",
-      "steps": [
-        "Step 1: Project Setup and Configuration",
-        "Step 2: Database Design and Setup",
-        "Step 3: API Development with ASP.NET",
-        "Step 4: Testing and Deployment"
-      ]
-    },
-    {
       "projectName": "Football Prediction Console App",
       "projectType": "C# Console App",
       "typeIcon": "C#",
@@ -79,6 +79,49 @@
         "Step 2: API Integration and Data Retrieval",
         "Step 3: Algorithm Development and Prediction Models",
         "Step 4: User Interface and Testing"
+      ]
+    },
+    {
+      "projectName": "Weather App",
+      "projectType": "Angular",
+      "typeIcon": "Angular",
+      "projectImages": [
+        {
+          "image1": "/assets/images/weather(1).png",
+          "image2": "/assets/images/weather(2)",
+          "image3": "/assets/images/weather(3)",
+          "image4": "/assets/images/weather(4)"
+        }
+      ],
+      "projectInformation": "My Weather Forecast Web App is a feature-rich Angular application that provides real-time weather information for various locations. Powered by TypeScript, this intuitive app seamlessly fetches weather data from a reliable API, offering users comprehensive forecasts for different regions. The app's interactive interface allows users to explore detailed weather data, including temperature, humidity, wind speed, and more.With advanced data processing and analysis, My Weather Forecast Web App identifies patterns and trends that influence weather conditions. Utilizing cutting-edge algorithms, the app generates accurate forecasts, empowering users to plan their activities with confidence.In the development of this web app, I harnessed the power of Angular and TypeScript, alongside various supporting libraries. The seamless integration of these technologies enables efficient data handling and ensures a smooth user experience. Additionally, the app leverages charting libraries to visually represent weather trends, enhancing the presentation of forecast data.My Weather Forecast Web App features a user-friendly design, making it simple to navigate and customize settings. Users can easily switch between locations and view weather details for different times of the day. Stay ahead of changing weather conditions with this powerful and informative web app.Experience the convenience of My Weather Forecast Web App by visiting the following link: Weather Forecast App.",
+      "projectGitHubRepo": "",
+      "steps": [
+        "Step 1: Planning and Requirements Gathering",
+        "Step 2: Frontend Development with Angular",
+        "Step 3: Backend Development with ASP.NET",
+        "Step 4: Integration and Testing"
+      ]
+    },
+    {
+      "projectName": "Blog-App C# Api",
+      "projectType": "C#, .NET CORE & ASP.NET",
+      "typeIcon": "C#",
+      "projectImages": [
+        {
+          "image1": "/assets/images/BrightMarsh(1).png",
+          "image2": "/assets/images/blog-app-api(2)",
+          "image3": "/assets/images/blog-app-api(3)",
+          "image4": "/assets/images/blog-app-api(4)"
+        }
+      ],
+      
+"projectInformation": "My C# CRUD API serves as the robust backend for my Angular blog app, delivering seamless functionality and efficient database management.<br><br> Leveraging the power of ASP.NET and Microsoft NuGet packages, this API empowers users with comprehensive CRUD (Create, Read, Update, Delete) operations for blog posts. <br>Through a secure connection, it ensures the Angular frontend and backend database seamlessly communicate and interact.<br> <br>Designed for flexibility and scalability, the API streamlines the creation of database tables and supports easy implementation of migrations. <br><br> It excels in providing a rich multimedia experience by enabling blog authors and readers to effortlessly upload pictures for captivating blog posts.With this reliable C# CRUD API, managing your blog app becomes effortless. You can create, edit, or delete blog posts with confidence, knowing that your data is in safe hands. Embrace the seamless integration and power of this API to unlock the full potential of your Angular blog app.To explore more about my C# CRUD API for the blog app, feel free to visit the Github github link: <a href=\"https://your-crud-api-website.com\">blog api</a>",
+      "projectGitHubRepo": "",
+      "steps": [
+        "Step 1: Project Setup and Configuration",
+        "Step 2: Database Design and Setup",
+        "Step 3: API Development with ASP.NET",
+        "Step 4: Testing and Deployment"
       ]
     },
     {
