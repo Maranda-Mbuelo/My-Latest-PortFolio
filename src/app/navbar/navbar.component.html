@@ -1,17 +1,20 @@
-<nav class="bg-gray-800">
+<nav class="bg-gray-800 ">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <div class="flex-shrink-0">
-        <a (click)="checkUser()" class="text-white text-lg font-semibold hover:text-indigo-300">Mbuelo</a>
+        <a (click)="checkUser()" class="text-white text-lg font-semibold hover:text-indigo-300 cursor-help" [innerText]="'Mbuelo'"></a>
       </div>
-      <div class="hidden md:block">
+      <div class="hidden md:block pr-10">
         <ul class="ml-4 flex space-x-4">
-          <li><a href="mbuelo-maranda-about" class="text-gray-300 hover:text-white relative">About</a></li>
-          <li><a href="https://za.linkedin.com/in/maranda-marvin-592a42233" class="text-gray-300 hover:text-white relative">LinkedIn</a></li>
-          <li><a href="mbuelo-maranda/contactForm" class="text-gray-300 hover:text-white relative">Contact</a></li>
-          <li><a href="mbuelo-maranda/Projects" class="text-gray-300 hover:text-white relative">Projects</a></li>
-          <li><a href="mbuelo-maranda/Service" class="text-gray-300 hover:text-white relative">Services</a></li>
-        </ul>
+          <ng-container *ngFor="let link of links">
+            <li>
+              <a [href]="link.path" class="text-gray-300 hover:text-white relative">
+                <span [innerHTML]="link.icon" class="inline-block mr-2"></span>
+                {{ link.name }}
+              </a>
+            </li>
+          </ng-container>
+        </ul>        
       </div> 
       <div class="md:hidden">
         <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white" aria-label="Toggle menu" (click)="toggleMobileMenu()">
@@ -22,11 +25,9 @@
       </div>
     </div>
     <ul class="md:hidden" [ngClass]="{ 'block': isMobileMenuOpen, 'hidden': !isMobileMenuOpen }">
-      <li><a href="mbuelo-maranda-about" class="block px-4 py-2 text-sm text-gray-300 hover:text-white">About</a></li>
-      <li><a href="https://za.linkedin.com/in/maranda-marvin-592a42233" class="block px-4 py-2 text-sm text-gray-300 hover:text-white">LinkedIn</a></li>
-      <li><a href="mbuelo-maranda/contactForm" class="block px-4 py-2 text-sm text-gray-300 hover:text-white">Contact</a></li>
-      <li><a href="mbuelo-maranda/Projects" class="block px-4 py-2 text-sm text-gray-300 hover:text-white">Projects</a></li>
-      <li><a href="mbuelo-maranda/Service" class="block px-4 py-2 text-sm text-gray-300 hover:text-white">Services</a></li>
+      <ng-container *ngFor="let link of links">
+        <li><a [href]="link.path" class="block px-4 py-2 text-sm text-gray-300 hover:text-white" [innerHTML]="link.name"></a></li>
+      </ng-container>
     </ul>
   </div>
 </nav>

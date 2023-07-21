@@ -10,7 +10,7 @@
         "/assets/images/TshindoloNow(2).png"
       ],
       "projectInformation": "Tshindolo Web App is an online dynamic Angular application that showcases a real-time Park located at Venda/Mafukani. This website offers a captivating experience by displaying stunning pictures and providing various interactive features. <br><br> With Tshindolo Web App, you have the option to enjoy an autoplay slideshow of the park pictures, immersing yourself in the beauty of the surroundings.<br> Alternatively, you can browse the pictures manually using the convenient next and previous buttons, allowing you to explore the park at your own pace. <br><br> Experience the wonders of Tshindolo Park through this engaging web app. Visit the following link to access the application:<br> <a href=\"https://tshindolo-bymbuelo.web.app\">tshindolo-bymbuelo.web.app</a>.",
-      "projectGitHubRepo": "",
+      "projectGitHubRepo": "https://github.com/Marandadtc/TshindoloApp.git",
       "steps": [
         "Step 1: Research and Planning",
         "Step 2: Design and Prototyping",
@@ -73,7 +73,7 @@
         }
       ],
       "projectInformation": "My Football Match Prediction Console App is a powerful tool for analyzing and predicting the outcomes of football matches. Developed in C#, this feature-rich app leverages an API to fetch comprehensive soccer data from a reliable football database. The app utilizes advanced mathematical algorithms and statistical analysis to identify patterns, trends, and key factors that influence match results. By applying cutting-edge prediction models, the app generates accurate forecasts for upcoming matches, empowering users to make informed decisions.<br><br> In the development of this console app, I utilized various technologies and libraries, including C#, .NET framework, and Newtonsoft.Json. The integration of Newtonsoft.Json enables seamless handling of JSON data, allowing the app to efficiently process and extract relevant information from the API responses. Furthermore, the app provides functionalities to write and read data in JSON format, facilitating the management and storage of prediction data.<br><br> My Football Match Prediction Console App offers a user-friendly interface, making it easy for users to input match data, view predictions, and explore detailed insights. Users can also customize prediction settings, including factors such as team form and match conditions, to enhance the accuracy of the predictions.<br><br> Explore the capabilities of My Football Match Prediction Console App by visiting the following link: <a href=\"https://your-console-app-website.com\">Football Console App</a>.",
-      "projectGitHubRepo": "",
+      "projectGitHubRepo": "https://github.com/Marandadtc/FootBall-Prediction.git",
       "steps": [
         "Step 1: Project Setup and Configuration",
         "Step 2: API Integration and Data Retrieval",
@@ -116,7 +116,7 @@
       ],
       
 "projectInformation": "My C# CRUD API serves as the robust backend for my Angular blog app, delivering seamless functionality and efficient database management.<br><br> Leveraging the power of ASP.NET and Microsoft NuGet packages, this API empowers users with comprehensive CRUD (Create, Read, Update, Delete) operations for blog posts. <br>Through a secure connection, it ensures the Angular frontend and backend database seamlessly communicate and interact.<br> <br>Designed for flexibility and scalability, the API streamlines the creation of database tables and supports easy implementation of migrations. <br><br> It excels in providing a rich multimedia experience by enabling blog authors and readers to effortlessly upload pictures for captivating blog posts.With this reliable C# CRUD API, managing your blog app becomes effortless. You can create, edit, or delete blog posts with confidence, knowing that your data is in safe hands. Embrace the seamless integration and power of this API to unlock the full potential of your Angular blog app.To explore more about my C# CRUD API for the blog app, feel free to visit the Github github link: <a href=\"https://your-crud-api-website.com\">blog api</a>",
-      "projectGitHubRepo": "",
+      "projectGitHubRepo": "https://github.com/Marandadtc/BrightMarsh-Blog-API.git",
       "steps": [
         "Step 1: Project Setup and Configuration",
         "Step 2: Database Design and Setup",
@@ -158,7 +158,7 @@
             }
         ],
         "projectInformation": "My Tic Tac Toe game, developed using C#, offers an exciting gaming experience that combines mathematics and critical thinking. This interactive game challenges players to strategically place their X or O marks on a 3x3 grid, aiming to create a winning combination before their opponent. With an intuitive user interface and engaging gameplay, the Tic Tac Toe game tests players' logic, decision-making, and problem-solving skills. It implements mathematical algorithms to determine winning moves and block opponents from achieving victory. Whether playing against the computer or challenging friends, this C# Tic Tac Toe game guarantees hours of fun and intellectual stimulation.<br><br>You can enjoy playing my Tic Tac Toe game by visiting the following link: <a href=\"https://your-tic-tac-toe-game-website.com\">tic-tac-toe-game</a> <br> Just clone my Repo and run the solution and enjoy my Game",
-        "projectGitHubRepo": "",
+        "projectGitHubRepo": "https://github.com/Marandadtc/My-Tic-Tac-Toe-Game.git",
         "steps": [
             "Step 1: Project Setup and Initialization\n\nSet up the development environment for C# console application development.\nCreate a new C# console application project.\nSet up the project structure and dependencies.\nInitialize the project repository.",
             "Step 2: Fetching Football Data\n\nResearch and identify a reliable football database or API that provides comprehensive soccer data.\nIntegrate the selected football database/API into the console app.\nImplement the necessary logic to fetch football match data, including fixtures, team information, and match results.\nHandle API authentication and error handling.",

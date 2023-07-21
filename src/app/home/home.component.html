@@ -6,8 +6,8 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center z-10">
         <div class="w-full md:w-1/2">
           <div class="text-left">
-            <h1 class="text-4xl md:text-6xl font-bold text-gray-400">Welcome to My Portfolio</h1>
-            <p class="mt-4 text-lg md:text-xl text-gray-500">Discover my projects and skills</p>
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-400" [innerHTML]="heading"></h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-500" [innerHTML]="shortText"></p>
           </div>
           <div class="mt-12 space-x-4 flex flex-wrap">
             <a href="/mbuelo-maranda/Overview" class="py-4 px-6 bg-indigo-600 text-white font-medium rounded-md shadow-lg hover:bg-indigo-700 transition duration-300 ease-in-out">
@@ -21,7 +21,7 @@
         <div class="w-full md:w-1/2">
             <div class="relative">
               <div class="absolute inset-0 bg-black opacity-50 rounded-md shadow-lg"></div>
-              <img src="/assets/images/6352027a-08ba-404b-a616-16e40cbb4d70-removebg-preview.png" alt="Profile Picture" class="rounded-md w-full h-auto">
+              <img [src]="image" alt="Profile Picture" class="rounded-md w-full h-auto">
             </div>
           </div>
           

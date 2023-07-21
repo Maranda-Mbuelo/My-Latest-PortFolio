@@ -50,7 +50,7 @@ export class ProjectsComponent {
         return projectImages.image1;
       }
     }
-    // Return a default image URL or an empty string if no images are available
+    // Return an empty string if no images are available
     return '';
   }
   
