@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { Project, ProjectImages } from '../interfaces/project';
+import { Project, ProjectImages } from '../../interfaces/project';
 
 @Component({
   selector: 'app-projects',

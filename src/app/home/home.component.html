@@ -1,5 +1,5 @@
 <div *ngIf="video" class="min-h-screen flex flex-col">
-    <app-navbar></app-navbar>
+    <app-navbar [links]="navigation"></app-navbar>
     
     <section class="flex-grow flex items-center justify-center bg-gray-200 relative">
       <video class="video-slide absolute top-0 left-0 w-full h-full object-cover z-0" [src]="video" [autoplay]="'autoplay'" muted loop></video>
@@ -14,7 +14,7 @@
               Explore Now
             </a>
             <a href="mbuelo-maranda/timeline" class="py-4 px-6 bg-gray-800 text-white font-medium rounded-md shadow-lg hover:bg-gray-900 transition duration-300 ease-in-out">
-                Timeline
+              Timeline
             </a>
           </div>
         </div>
@@ -26,6 +26,10 @@
           </div>
           
       </div>
+
+      <a href="https://github.com/Maranda-Mbuelo" target="_blank" class="fixed bottom-4 right-4 p-4 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-900 transition duration-300 ease-in-out">
+        <i class="fa-brands fa-github text-2xl"></i>
+      </a>
     </section>
 </div>
   

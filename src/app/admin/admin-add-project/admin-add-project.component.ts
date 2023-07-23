@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Project, ProjectImages } from 'src/app/interfaces/project';
+import { Project, ProjectImages } from 'src/interfaces/project';
 
 @Component({
   selector: 'app-admin-add-project',

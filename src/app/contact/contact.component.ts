@@ -44,6 +44,6 @@ export class ContactComponent {
   }
 
   openModal(): void {
-    this.showModal = true;
+    this.showModal = !this.showModal;
   }
 }
