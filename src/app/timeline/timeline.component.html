@@ -1,5 +1,14 @@
-<div class="flex flex-col items-center justify-center bg-gray-200 min-h-screen">
+<div class="flex flex-col items-center justify-center p-3 bg-gray-200 min-h-screen">
   <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-4">My Coding journey</h2>
+
+  <ng-container *ngFor="let icon of menuIcons; let i = index">
+    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 border rounded-xl shadow-lg flex items-center justify-center flex-col bg-transparent-black" [style.top]="calculateTopPosition(i)">
+      <a [href]="icon.name" class="p-4 text-gray-300 hover:text-white transition-colors" [innerHTML]="icon.icon">
+      </a>
+    </div>
+  </ng-container>
+  
+  
   
   <div class="flex flex-col space-y-4">
     <!-- Timeline Item -->

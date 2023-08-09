@@ -20,7 +20,7 @@ export class AppComponent {
           array.push(element);
           count++;
         } else{
-          console.log(element);
+          // console.log(element);
         }
       })
     });

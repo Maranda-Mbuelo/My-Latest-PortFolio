@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Project, ProjectImages } from '../../interfaces/project';
+import { ProjectComponent } from '../project/project.component';
 
 @Component({
   selector: 'app-projects',
@@ -8,13 +9,15 @@ import { Project, ProjectImages } from '../../interfaces/project';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-  projects: Project[] = []; // Assign an empty array as the initializer
+  projects: Project[] = [];
+  selectedProjectName: string | undefined;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
     this.fetchProjects();
   }
+
 
   fetchProjects() {
     this.http.get<Project[]>('/assets/projects.json').subscribe((data) => {
@@ -23,21 +26,24 @@ export class ProjectsComponent {
   }
 
   openModal(projectId: string) {
+    this.selectedProjectName = projectId;
     const modal = document.getElementById(projectId + 'Modal');
     if (modal) {
       modal.classList.remove('hidden');
     }
   }
+  
 
   closeModal(projectId: string) {
     const modal = document.getElementById(projectId + 'Modal');
-    if (modal) {
+    this.selectedProjectName = undefined;
+    if(modal) {
       modal.classList.add('hidden');
     }
   }
 
   toggleCollapse(project: Project) {
-    project.collapsed = !project.collapsed;
+    project.collapsed =! project.collapsed;
   }
 
   getProjectImage(project: Project): string {

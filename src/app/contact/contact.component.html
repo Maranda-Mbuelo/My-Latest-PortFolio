@@ -1,4 +1,5 @@
 <section class="min-h-screen flex items-center justify-center bg-gray-800">
+  <button class="absolute top-4 left-4 bg-blue-500 bg-indigo-600 text-indigo-300 hover:text-indigo-200 px-4 py-2 rounded-md shadow-md" (click)="goBack()" >Home</button>
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center">
         <h1 class="text-4xl md:text-6xl font-bold text-indigo-300">Contact Me</h1>
@@ -11,18 +12,29 @@
           </svg>
           <i class="fa-solid fa-phone" style="color: orange;"></i> <a href="tel:+27787722573" class="text-lg text-gray-400 hover:text-indigo-300">+27 787 722 573</a>
         </div>
+        
         <div class="flex items-center space-x-4">
           <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
           </svg>
-          <i class="fa-brands fa-whatsapp" style="color: orange;"></i> <a href="tel:+27673866562" class="text-lg text-gray-500 hover:text-indigo-300">+27 673 866 562</a>
+          <i class="fa-brands fa-whatsapp" style="color: orange;"></i>
+          <a href="https://api.whatsapp.com/send?phone=27673866562&text=Hello%20there,%20I%20want%20to%20get%20in%20touch%20with%20you!" class="text-lg text-gray-500 hover:text-indigo-300">+27 673 866 562</a>
         </div>
+        
         <div class="flex items-center space-x-4">
           <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
           </svg>
           <i class="fa-solid fa-envelope" style="color: orange;"></i> <a href="mailto:brightmarsh.m@gmail.com" class="text-lg text-gray-600 hover:text-indigo-300">brightmarsh.m@gmail.com</a>
         </div>
+
+        <div class="flex items-center space-x-4 mt-4">
+          <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+          </svg>
+          <a href="/assets/Mbuelo Maranda_CV.pdf" download class="text-lg text-gray-400 hover:text-gray-100">Click To Download My CV</a>
+        </div>
+
       </div>
       <div class="mt-12 flex justify-center">
         <button class="flex items-center space-x-2 bg-indigo-600 text-white font-medium rounded-md px-4 py-2 transition duration-300 ease-in-out hover:bg-indigo-700" (click)="openModal()">

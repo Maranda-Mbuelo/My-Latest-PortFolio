@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { environment } from 'src/environment/environment';
 import emailjs from '@emailjs/browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -20,7 +21,11 @@ export class ContactComponent {
     message: ''
   });
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private router: Router) {}
+
+  goBack(): void{
+    this.router.navigate(['/home']);
+  }
 
   async send() {
     if (this.form) {
@@ -35,6 +40,7 @@ export class ContactComponent {
           message: this.form.value.message,
         });
         this.form.reset();
+        this.showModal = !this.showModal;
       } catch (error) {
         console.error('Failed to send message:', error);
       } finally {
@@ -44,6 +50,6 @@ export class ContactComponent {
   }
 
   openModal(): void {
-    this.showModal = !this.showModal;
+    this.showModal = true;
   }
 }

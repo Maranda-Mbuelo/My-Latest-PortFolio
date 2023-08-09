@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class TimelineComponent {
 
-timelineArray: any = [
+  timelineArray: any = [
   {
     language: `C++`,
     paragraph: `I started my coding journey with C++, which was my first programming language and remains one of my favorites. During my learning process, I gained a solid understanding of fundamental concepts such as Data Types, which I am proficient in. As I progressed, I delved into object-oriented programming, where I had a lot of fun exploring the world of objects and their interactions. Decision-making using conditional statements became second nature to me, followed by the implementation of functions and the power of iteration.
@@ -68,7 +68,33 @@ timelineArray: any = [
 
     I truly enjoy working with Angular and TypeScript. The combination of Angular's comprehensive framework and TypeScript's expressive and scalable nature makes it my favorite language stack. I am actively seeking job opportunities in Angular development to further refine and apply my skills in TypeScript programming.`
   },
-]
+  ]
+
+  menuIcons: any = [
+    {
+      icon: '<i class="fa-solid fa-house-user text-xl"></i>',
+      name: 'home'
+    },
+    {
+      icon: '<i class="fa-solid fa-list-check text-xl"></i>',
+      name: 'mbuelo-maranda/Projects'
+    },
+    {
+      icon: '<i class="fa-solid fa-comment text-xl"></i>',
+      name: 'mbuelo-maranda/contactForm'
+    },
+    {
+      icon: '<i class="fa-brands fa-github text-xl"></i>',
+      name: 'https://github.com/Maranda-Mbuelo'
+    }
+  ]
+
+  calculateTopPosition(index: number): string {
+    const spacing = 70; // You can adjust this value for the desired spacing between icons
+    const topPosition = `calc(40% + ${index * spacing}px)`;
+    return topPosition;
+  }
+  
 
 
 }

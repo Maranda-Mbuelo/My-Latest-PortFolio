@@ -7,17 +7,21 @@
         <div *ngFor="let project of projects" class="bg-white rounded-lg shadow-lg p-4">
           <img [src]="getProjectImage(project)" alt="Project Image" class="w-full h-48 object-cover mb-4">
           <p class="text-gray-600" [innerHTML]="project.projectInformation"></p>
+          <!-- <p class="text-gray-600 m-2">Hello Hi</p> -->
+
+
           <!-- Modal Trigger Button -->
           <button class="mt-4 py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300 ease-in-out" (click)="openModal(project.projectName)">View Details</button>
+          
+          
           <!-- Modal -->
           <div [id]="project.projectName + 'Modal'" class="fixed inset-0 flex items-center justify-center z-50 bg-gray-900 bg-opacity-75 hidden">
-            <div class="bg-white rounded-lg shadow-lg p-4 h-screen w-screen">
+            <div class="bg-white rounded-lg shadow-lg p-7 h-screen w-screen">
               <h3 class="text-lg md:text-xl font-bold text-gray-800" [innerHTML]="project.projectName"></h3>
               <!-- <p class="mt-2 text-gray-600" [innerHTML]="project.projectInformation"></p> -->
               <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4">
                 <div class="flex">
                   <div class="flex-shrink-0">
-                    <!-- You can replace this icon with your desired icon -->
                     <svg class="h-6 w-6 text-indigo-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
                     </svg>
@@ -34,9 +38,16 @@
                 </div>
               </div>
               <p class="text-sm font-medium text-indigo-800">
-                In the meanwhile, Check {{project.projectName}} code on git hub here: <a href="https://github.com/Marandadtc?tab=repositories"> https://github.com/Marandadtc?tab=repositories</a>
+                In the meanwhile, Check {{project.projectName}} code on git hub here: <a href="https://github.com/Maranda-Mbuelo?tab=repositories"> https://github.com/Maranda-Mbuelo?tab=repositories</a>
               </p>
-              
+
+              <!-- <div>
+                <app-project [projectName]="selectedProjectName"></app-project>
+              </div>               -->
+              <!-- <div>
+                <app-project></app-project>
+              </div> -->
+
               <button class="mt-4 py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300 ease-in-out" (click)="closeModal(project.projectName)">Close</button>
             </div>
           </div>
