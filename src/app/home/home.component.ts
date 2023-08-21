@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Navigation } from 'src/interfaces/navigation';
 import { AppComponent } from '../app.component';
+import { TextwriterService } from 'src/services/typewriter.service';
 
 @Component({
   selector: 'app-home',
@@ -16,10 +17,35 @@ export class HomeComponent implements OnInit {
   heading: string = 'Welcome to My Portfolio';
   navigation: Navigation[] = []; 
 
-  constructor(private method: AppComponent){}
+  constructor(private method: AppComponent, private textwriterService: TextwriterService) { }
 
   ngOnInit(): void {
     this.video = '/assets/videos/Animated_Background .mp4';
     this.method.fetchNavigation('Home', this.navigation);
-}
+    
+    const option: any[] = [
+      {
+        loop: false,
+        typeSpeed: 120,
+        deleteSpeed: 250,
+        typeColor: '#ccc',
+        cursorColor: 'transparent',
+        typeClass: 'sans-serif',
+        target: document.querySelector<HTMLElement>('.text-left p'),
+        text: 'Exciting Adventure!'
+      }
+    ]
+
+    //const paragraphElement = document.querySelector('.mt-4.text-lg.md:text-xl.text-gray-500') as HTMLElement; // Explicit type assertion
+    //const text = 'Discover my projects and skills';
+    //const speed = 90; // Adjust the speed as needed
+
+    option.forEach((element, index) => {
+      setTimeout(() => {
+        if (element.target) {
+          this.textwriterService.writeText(element.target, element.text, element);
+        }
+      }, index * 4000);
+    });
+  }
 }

@@ -10,7 +10,8 @@ import { Project, ProjectImages } from 'src/interfaces/project';
 export class AdminAddProjectComponent {
   project: Project = {
     projectName: '',
-    projectType: '',
+    projectStatus: '',
+    projectType: [''],
     typeIcon: '',
     projectImages: [],
     projectInformation: '',
@@ -29,7 +30,8 @@ export class AdminAddProjectComponent {
           // Reset the project form
           this.project = {
             projectName: '',
-            projectType: '',
+            projectStatus: '',
+            projectType: [''],
             typeIcon: '',
             projectImages: [],
             projectInformation: '',

@@ -1,20 +1,20 @@
-<div *ngIf="project" class="mt-8">
-    <h3 class="text-xl font-bold text-gray-800">{{ project.projectName }}</h3>
-    <p class="mt-2 text-gray-600">{{ project.projectInformation }}</p>
-  
-    <div class="grid grid-cols-2 gap-4 mt-4">
-      <!-- Display all the project images -->
-      <ng-container *ngFor="let image of getProjectImages(project.projectImages)">
-        <img [src]="image" alt="Project Image" class="w-full h-40 object-cover rounded-lg">
-      </ng-container>
+<div class="flex flex-wrap items-center justify-center p-4 space-y-8">
+<div class="fixed inset-x-0 top-0 md:left-2 md:top-2 text-white text-center bg-blue-400 rounded-full p-2 text-xs font-semibold z-10">
+  This page is under development
+</div>
+
+  <ng-container *ngFor="let step of project.steps; let i = index">
+    <div class="flex flex-wrap-reverse justify-between w-full space-x-4" [ngClass]="{'flex-row-reverse': i % 2 !== 0}">
+      <div class="w-full md:w-1/2 fade-in"> <!-- Apply the fade-in class here -->
+        <div class="bg-gradient-to-r from-purple-400 to-blue-500 p-8 rounded-lg shadow-lg">
+          <img [src]="getStepImage(i)" alt="Step Image" class="w-full h-auto rounded-lg">
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 fade-in"> <!-- Apply the fade-in class here -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <p class="text-gray-700 text-base" [innerHTML]="step"></p>
+        </div>
+      </div>
     </div>
-  
-    <h4 class="mt-6 font-semibold text-gray-800">Steps:</h4>
-    <ul class="list-disc pl-6 mt-2">
-      <!-- Display all the project steps -->
-      <li *ngFor="let step of project.steps" class="text-gray-600">{{ step }}</li>
-    </ul>
-  
-    <a [href]="project.projectGitHubRepo" target="_blank" class="mt-4 inline-block px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300 ease-in-out">View on GitHub</a>
-  </div>
-  
+  </ng-container>
+</div>

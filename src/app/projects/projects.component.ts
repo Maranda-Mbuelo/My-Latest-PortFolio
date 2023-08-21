@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { Project, ProjectImages } from '../../interfaces/project';
-import { ProjectComponent } from '../project/project.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -12,11 +12,15 @@ export class ProjectsComponent {
   projects: Project[] = [];
   selectedProjectName: string | undefined;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit() {
     this.fetchProjects();
   }
+
+  openProject(projectName: string) {
+    this.router.navigate(['mbuelo-maranda-project-name', projectName]);
+  }  
 
 
   fetchProjects() {
@@ -25,22 +29,22 @@ export class ProjectsComponent {
     });
   }
 
-  openModal(projectId: string) {
-    this.selectedProjectName = projectId;
-    const modal = document.getElementById(projectId + 'Modal');
-    if (modal) {
-      modal.classList.remove('hidden');
-    }
-  }
+  // openModal(projectId: string) {
+  //   this.selectedProjectName = projectId;
+  //   const modal = document.getElementById(projectId + 'Modal');
+  //   if (modal) {
+  //     modal.classList.remove('hidden');
+  //   }
+  // }
   
 
-  closeModal(projectId: string) {
-    const modal = document.getElementById(projectId + 'Modal');
-    this.selectedProjectName = undefined;
-    if(modal) {
-      modal.classList.add('hidden');
-    }
-  }
+  // closeModal(projectId: string) {
+  //   const modal = document.getElementById(projectId + 'Modal');
+  //   this.selectedProjectName = undefined;
+  //   if(modal) {
+  //     modal.classList.add('hidden');
+  //   }
+  // }
 
   toggleCollapse(project: Project) {
     project.collapsed =! project.collapsed;

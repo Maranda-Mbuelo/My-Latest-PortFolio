@@ -1,58 +1,54 @@
-<div *ngIf="projects" class="flex flex-col items-center justify-center bg-gray-200 min-h-screen">
-    <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-4">Projects</h2>
-  
-    <div class="max-w-5xl px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Project Blocks -->
-        <div *ngFor="let project of projects" class="bg-white rounded-lg shadow-lg p-4">
-          <img [src]="getProjectImage(project)" alt="Project Image" class="w-full h-48 object-cover mb-4">
-          <p class="text-gray-600" [innerHTML]="project.projectInformation"></p>
-          <!-- <p class="text-gray-600 m-2">Hello Hi</p> -->
+<div *ngIf="projects" class="bg-gradient-to-br from-blue-500 to-purple-500 min-h-screen p-2">
+  <h2 class="text-2xl md:text-4xl font-bold text-gray-200 mb-4 text-center py-4">Projects</h2>
 
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-lg shadow-lg">
+        <!-- Table header -->
+        <thead>
+          <tr>
+            <th class="py-3 px-6 text-left">Project Image</th>
+            <th class="py-3 px-6 text-left">Technologies Used</th>
+            <th class="py-3 px-6 text-left">Status</th>
+            <th class="py-3 px-6 text-left">Description</th>
+            <th class="py-3 px-6 text-left">Action</th>
+          </tr>
+        </thead>
+        <!-- Table body -->
+        <tbody>
+          <tr *ngFor="let project of projects" class="border-b border-gray-200 hover:bg-gray-100 fade-in"> <!-- Apply the fade-in class here -->
+            <td class="py-3 px-6 text-left">
+              <img [src]="getProjectImage(project)" alt="Project Image" class="w-20 h-12 object-cover">
+            </td>
+            <td class="py-3 px-6 text-left">
+              <ng-container *ngFor="let type of project.projectType">
+                <span class="inline-block bg-indigo-200 text-indigo-800 rounded-full px-2 py-1 text-xs font-semibold mr-2" *ngIf="type.includes('C#')">C#</span>
+                <span class="inline-block bg-yellow-200 text-yellow-800 rounded-full px-2 py-1 text-xs font-semibold mr-2" *ngIf="type.includes('ASP.NET')">Asp.Net</span>
+              <span class="inline-block bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs font-semibold mr-2" *ngIf="type.includes('Angular')">TypeScript</span>
+              <span class="inline-block bg-green-200 text-green-800 rounded-full px-2 py-1 text-xs font-semibold mr-2" *ngIf="project.projectType.includes('Angular')">Angular</span>
+              </ng-container>
+            </td>
+            <td class="py-3 px-6 text-left">
+              <span 
+                [ngClass]="{
+                  'bg-green-200 text-green-800': project.projectStatus, 
+                  'bg-red-200 text-red-800': !project.projectStatus
+                }"
+                class="inline-block rounded-full px-2 py-1 text-xs font-semibold"
+              >
+              {{ project.projectStatus ? 'Completed' : 'in_Progress' }}  
+            </span>
 
-          <!-- Modal Trigger Button -->
-          <button class="mt-4 py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300 ease-in-out" (click)="openModal(project.projectName)">View Details</button>
-          
-          
-          <!-- Modal -->
-          <div [id]="project.projectName + 'Modal'" class="fixed inset-0 flex items-center justify-center z-50 bg-gray-900 bg-opacity-75 hidden">
-            <div class="bg-white rounded-lg shadow-lg p-7 h-screen w-screen">
-              <h3 class="text-lg md:text-xl font-bold text-gray-800" [innerHTML]="project.projectName"></h3>
-              <!-- <p class="mt-2 text-gray-600" [innerHTML]="project.projectInformation"></p> -->
-              <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4">
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                    <svg class="h-6 w-6 text-indigo-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
-                    </svg>
-                  </div>
-                  <div class="ml-3">
-                    <p class="text-sm font-medium text-indigo-800">
-                      This page is still under development!
-                    </p>
-                    <p class="mt-1 text-sm text-indigo-600">
-                      We apologize for any inconvenience caused. Please check back later.
-                    </p>
-                  </div>
-                  
-                </div>
-              </div>
-              <p class="text-sm font-medium text-indigo-800">
-                In the meanwhile, Check {{project.projectName}} code on git hub here: <a href="https://github.com/Maranda-Mbuelo?tab=repositories"> https://github.com/Maranda-Mbuelo?tab=repositories</a>
-              </p>
-
-              <!-- <div>
-                <app-project [projectName]="selectedProjectName"></app-project>
-              </div>               -->
-              <!-- <div>
-                <app-project></app-project>
-              </div> -->
-
-              <button class="mt-4 py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300 ease-in-out" (click)="closeModal(project.projectName)">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
+            </td>
+            <td class="py-3 px-6 text-left">
+              <div class="truncate">{{ project.projectInformation | truncate: 5 }}</div>
+            </td>
+            <td class="py-3 px-6 text-left">
+              <button class="py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300 ease-in-out" (click)="openProject(project.projectName)">View</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  
+</div>

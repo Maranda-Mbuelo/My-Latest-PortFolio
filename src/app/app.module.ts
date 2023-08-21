@@ -16,6 +16,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { AdminAddProjectComponent } from './admin/admin-add-project/admin-add-project.component';
 import { ProjectComponent } from './project/project.component';
+import { TruncatePipe } from './truncate.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProjectComponent } from './project/project.component';
     ProjectsComponent,
     TimelineComponent,
     AdminAddProjectComponent,
-    ProjectComponent
+    ProjectComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
