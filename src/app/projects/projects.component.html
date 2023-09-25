@@ -52,3 +52,11 @@
     </div>
   </div>
 </div>
+
+<app-project
+*ngIf="showModal"
+  [backgroundImage]="backgroundImage"
+  [githubLink]="githubLink"
+  [liveLink]="liveLink"
+  (closeModal)="showModal = false"
+></app-project>

@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 import { environment } from 'src/environment/environment';
 import emailjs from '@emailjs/browser';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
@@ -21,10 +22,10 @@ export class ContactComponent {
     message: ''
   });
 
-  constructor(private formBuilder: FormBuilder, private router: Router) {}
+  constructor(private formBuilder: FormBuilder, private router: Router, private location: Location) { }
 
-  goBack(): void{
-    this.router.navigate(['/home']);
+  goBack() {
+    this.location.back();
   }
 
   async send() {
