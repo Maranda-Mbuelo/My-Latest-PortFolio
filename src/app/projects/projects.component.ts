@@ -9,13 +9,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-[x: string]: any;
   projects: Project[] = [];
-  selectedProjectName: string | undefined;
-  showModal = false; // Add this property
-  backgroundImage = ''; // Add this property
-  githubLink = ''; // Add this property
-  liveLink = ''; // Add this property
+  selectedProject: Project | null = null;
+  showToaster = false;
+  uniqueProjectTypes: string[] = this.getUniqueProjectTypes(this.projects);
+
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -23,25 +21,13 @@ export class ProjectsComponent implements OnInit {
     this.fetchProjects();
   }
 
-  // In your projects component
-openProject(projectName: string) {
-  // Find the selected project and set the modal data
-  const selectedProject = this.projects.find((project) => project.projectName === projectName);
-  if (selectedProject) {
-    this.showModal = true;
-    this.backgroundImage = selectedProject.projectImages[0];
-    // this.githubLink = selectedProject.githubLink;
-    // this.liveLink = selectedProject.liveLink;
-  }
-}
-  
-
-
   fetchProjects() {
     this.http.get<Project[]>('/assets/projects.json').subscribe((data) => {
       this.projects = data;
+      this.uniqueProjectTypes = this.getUniqueProjectTypes(data); // Add this line
     });
   }
+  
 
   getProjectImage(project: Project): string {
     if (Array.isArray(project.projectImages) && project.projectImages.length > 0) {
@@ -56,6 +42,67 @@ openProject(projectName: string) {
     // Return an empty string if no images are available
     return '';
   }
+
+  openToaster(project: Project) {
+    this.selectedProject = project;
+    this.showToaster = true;
+  }
+
+  closeToaster() {
+    this.showToaster = false;
+  }
+
+  openGitHub(project: Project | null) {
+    if (project && project.projectGitHubRepo) {
+      window.open(project.projectGitHubRepo, '_blank');
+    }
+  }
+
+  openLiveWebsite(project: Project | null) {
+    if (project && project.projectGitHubRepo) {
+      window.open(project.projectGitHubRepo, '_blank');
+    }
+  }
+
+  getCssClass(type: string, i: number): string {
+    if (type.toLowerCase() === (`C#`).toLowerCase()) {
+      return 'bg-indigo-200 text-indigo-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
+    } else if (type.toLowerCase() === 'asp.net') {
+      return 'bg-red-200 text-red-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
+    } else if (type.toLowerCase() === 'angular' && i === 0) {
+      return 'bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
+    } else if (type.toLowerCase() === 'angular' && i !== 0) {
+      return ''; // Empty string to hide repeated Angular
+    } else if (type.toLowerCase() === 'mvc') {
+      return 'bg-red-200 text-red-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
+    } else if (type.toLowerCase() === 'api') {
+      return 'bg-pink-200 text-pink-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
+    } else if (type.toLowerCase() === 'JQuery') {
+      return 'bg-pink-200 text-pink-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
+    } else {
+      if(type.toLowerCase() == 'typescript'){
+        return 'bg-yellow-200 text-yellow-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
+      }
+      else{
+        return 'bg-pink-200 text-pink-800 rounded-full px-2 py-1 text-xs font-semibold mr-2'; // Return an empty string for other types
+      }
+    }
+  }
+
+
+  getUniqueProjectTypes(projects: Project[]): string[] {
+    const uniqueTypes: any[] = [];
   
+    projects.forEach((project) => {
+      project.projectType.forEach((type) => {
+        if (!uniqueTypes.includes(type)) {
+          uniqueTypes.push(type);
+        }
+      });
+    });
   
+    return uniqueTypes;
+  }
+  
+    
 }

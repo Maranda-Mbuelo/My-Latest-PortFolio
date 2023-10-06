@@ -17,3 +17,16 @@
     opacity: 0;
   }
   
+
+  /* Add this to your component's CSS file or styles.scss */
+/* Center the toaster */
+.center-toast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dim the background overlay */
+.bg-opacity-50 {
+  opacity: 0.5;
+}

@@ -5,7 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TimelineComponent } from './timeline/timeline.component';
-import  { AboutComponent } from './about/about.component';
+import    { AboutComponent } from './about/about.component';
 import { AdminAddProjectComponent } from './admin/admin-add-project/admin-add-project.component';
 import { OffersComponent } from './profile/offers/offers.component';
 import { ProjectComponent } from './project/project.component';

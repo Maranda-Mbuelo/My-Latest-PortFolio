@@ -17,6 +17,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { AdminAddProjectComponent } from './admin/admin-add-project/admin-add-project.component';
 import { ProjectComponent } from './project/project.component';
 import { TruncatePipe } from './truncate.pipe';
+import { ToasterComponent } from './toaster/toaster.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TruncatePipe } from './truncate.pipe';
     TimelineComponent,
     AdminAddProjectComponent,
     ProjectComponent,
-    TruncatePipe
+    TruncatePipe,
+    ToasterComponent
   ],
   imports: [
     BrowserModule,
