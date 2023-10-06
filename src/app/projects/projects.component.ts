@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit} from '@angular/core';
 import { Project, ProjectImages } from '../../interfaces/project';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { Navigation } from 'src/interfaces/navigation';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-projects',
@@ -12,13 +14,23 @@ export class ProjectsComponent implements OnInit {
   projects: Project[] = [];
   selectedProject: Project | null = null;
   showToaster = false;
+  navigationVisibility!: boolean;
+  navigation: Navigation[] = [];
   uniqueProjectTypes: string[] = this.getUniqueProjectTypes(this.projects);
 
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient, private route: ActivatedRoute, private method: AppComponent) {}
 
   ngOnInit() {
     this.fetchProjects();
+    this.method.fetchNavigation('Projects', this.navigation);
+    this.route.paramMap.subscribe(params => {
+      if (params.has('actualPage')) {
+        this.navigationVisibility = true;
+      } else {
+        this.navigationVisibility = false;
+      }
+    });
   }
 
   fetchProjects() {
@@ -76,12 +88,16 @@ export class ProjectsComponent implements OnInit {
       return ''; // Empty string to hide repeated Angular
     } else if (type.toLowerCase() === 'mvc') {
       return 'bg-red-200 text-red-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
-    } else if (type.toLowerCase() === 'api') {
+    } else if (type.toLowerCase() === 'html' || type.toLowerCase() === 'scss' || type.toLowerCase() === 'css') {
       return 'bg-pink-200 text-pink-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
     } else if (type.toLowerCase() === 'jquery') {
       return 'bg-yellow-200 text-yellow-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
     } else {
-      return 'bg-pink-200 text-pink-800 rounded-full px-2 py-1 text-xs font-semibold mr-2'; // Return an empty string for other types
+      if(type.toLowerCase() === 'microsoft sql' || type.toLowerCase() === 'api'){
+        return 'bg-yellow-200 text-yellow-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
+      } else{
+        return 'bg-pink-200 text-pink-800 rounded-full px-2 py-1 text-xs font-semibold mr-2'; // Return an empty string for other types
+      }
     }
   }
   

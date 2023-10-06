@@ -4,9 +4,10 @@
     <p class="mt-4 text-xl md:text-2xl text-gray-200" [innerHTML]="role"></p>
     <p class="mt-4 text-lg md:text-xl text-gray-200 p-6" [innerHTML]="paragraph">
     </p>
-    <div class="mt-8 rounded-full overflow-hidden">
-      <img [src]="image" alt="Profile Image" class="w-48 h-48 object-cover bg-transparent">
-    </div>
+    <div class="mt-8 z-0 relative">
+      <div class="w-full h-full  object-cover rounded-full bg-gradient-to-br from-black via-transparent to-transparent absolute bottom-6 right-12 border-b-4 border-yellow-500"></div>
+      <img [src]="image" alt="Profile Image" class="w-48 h-48 object-cover relative z-10 rounded-full border-b-2 border-yellow-700 border-orange-400">
+  </div>
 </div>
 <a href="https://github.com/Maranda-Mbuelo" target="_blank" class="fixed bottom-4 right-4 p-4 bg-transparent-black text-white rounded-full shadow-lg hover:bg-gray-900 transition duration-300 ease-in-out">
   <i class="fa-brands fa-github text-2xl"></i>

@@ -1,0 +1,9 @@
+/* CSS for the progress bar */
+.bg-gradient-to-r {
+    background: linear-gradient(to right, #3490dc, #f63f3f);
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Adjust the colors and styles to your liking */
+  

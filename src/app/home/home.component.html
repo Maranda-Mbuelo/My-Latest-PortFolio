@@ -1,36 +1,34 @@
 <div *ngIf="video" class="min-h-screen flex flex-col">
-    <app-navbar [links]="navigation"></app-navbar>
-    
-    <section class="flex-grow flex items-center justify-center bg-gray-200 relative">
-      <video class="video-slide absolute top-0 left-0 w-full h-full object-cover z-0" [src]="video" [autoplay]="'autoplay'" muted loop></video>
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center z-10">
-        <div class="w-full md:w-1/2">
-          <div class="text-left">
-            <h1 class="text-4xl md:text-6xl font-bold text-gray-400 text-fade-in" [innerHTML]="heading"></h1>
-            <p class="mt-4 text-lg md:text-xl text-gray-500 text-fade-in">Discover my projects and skills</p>
-            <p class="mbuelo"></p>
-          </div>
-          <div class="mt-12 space-x-4 flex flex-wrap buttons-fade-in">
-            <a href="/mbuelo-maranda/Overview" class="py-4 px-6 bg-indigo-600 text-white font-medium rounded-md shadow-lg hover:bg-indigo-700 transition duration-300 ease-in-out">
-              Explore Now
-            </a>
-            <a href="mbuelo-maranda/timeline" class="py-4 px-6 bg-gray-800 text-white font-medium rounded-md shadow-lg hover:bg-gray-900 transition duration-300 ease-in-out">
-              Timeline
-            </a>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 image-fade-in">
-            <div class="relative">
-              <div class="absolute inset-0 bg-black opacity-50 rounded-md shadow-lg"></div>
-              <img [src]="image" alt="Profile Picture" class="rounded-md w-full h-auto">
-            </div>
-        </div>
-          
-      </div>
+  <app-navbar [links]="navigation"></app-navbar>
 
-      <a href="https://github.com/Maranda-Mbuelo" target="_blank" class="fixed bottom-4 right-4 p-4 bg-transparent-black text-white rounded-full shadow-lg hover:bg-gray-900 transition duration-300 ease-in-out">
-        <i class="fa-brands fa-github text-2xl"></i>
-      </a>
-    </section>
+  <section class="flex-grow flex items-center justify-center bg-gray-900 relative">
+    <video class="video-slide absolute top-0 left-0 w-full h-full object-cover z-0" [src]="video" autoplay muted loop></video>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center z-10">
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <div class="text-white">
+          <h1 class="text-4xl md:text-6xl text-orange-300 font-bold text-fade-in" [innerHTML]="heading"></h1>
+
+          <p class="mt-4 text-lg md:text-xl text-gray-500 text-fade-in">Discover my projects and skills</p>
+        </div>
+        <div class="mt-8 space-y-4 md:space-x-4 flex flex-col md:flex-row md:space-y-0 buttons-fade-in">
+          <a href="/mbuelo-maranda/Overview" class="w-full md:w-auto py-4 px-6 bg-indigo-600 text-white font-medium rounded-md shadow-lg hover:bg-indigo-700 transition duration-300 ease-in-out">
+            Explore Now
+          </a>
+          <a href="mbuelo-maranda/timeline" class="w-full md:w-auto py-4 px-6 bg-gray-800 text-white font-medium rounded-md shadow-lg hover:bg-gray-900 transition duration-300 ease-in-out mt-4 md:mt-0">
+            Timeline
+          </a>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 mt-8 md:mt-0 image-fade-in">
+        <div class="relative">
+          <div class="absolute inset-0 bg-black opacity-50 rounded-md shadow-lg"></div>
+          <img [src]="image" alt="Profile Picture" class="rounded-md w-full h-auto">
+        </div>
+      </div>
+    </div>
+
+    <a href="https://github.com/Maranda-Mbuelo" target="_blank" class="fixed bottom-4 right-4 p-4 bg-transparent-black text-white rounded-full shadow-lg hover:bg-gray-900 transition duration-300 ease-in-out">
+      <i class="fa-brands fa-github text-2xl"></i>
+    </a>
+  </section>
 </div>
-  

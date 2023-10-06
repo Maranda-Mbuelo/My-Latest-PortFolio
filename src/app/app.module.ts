@@ -15,7 +15,6 @@ import { OffersComponent } from './profile/offers/offers.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { AdminAddProjectComponent } from './admin/admin-add-project/admin-add-project.component';
-import { ProjectComponent } from './project/project.component';
 import { TruncatePipe } from './truncate.pipe';
 import { ToasterComponent } from './toaster/toaster.component';
 
@@ -31,7 +30,6 @@ import { ToasterComponent } from './toaster/toaster.component';
     ProjectsComponent,
     TimelineComponent,
     AdminAddProjectComponent,
-    ProjectComponent,
     TruncatePipe,
     ToasterComponent
   ],
