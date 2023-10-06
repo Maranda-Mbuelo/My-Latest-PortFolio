@@ -15,7 +15,8 @@ export class AdminAddProjectComponent {
     typeIcon: '',
     projectImages: [],
     projectInformation: '',
-    projectGitHubRepo: ''
+    projectGitHubRepo: '',
+    liveSite: ""
   };
 
   constructor(private http: HttpClient) {}
@@ -34,7 +35,8 @@ export class AdminAddProjectComponent {
             typeIcon: '',
             projectImages: [],
             projectInformation: '',
-            projectGitHubRepo: ''
+            projectGitHubRepo: '',
+            liveSite: ""
           };
         },
         error => {

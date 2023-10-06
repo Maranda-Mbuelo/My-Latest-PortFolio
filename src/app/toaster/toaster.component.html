@@ -7,7 +7,7 @@
       <div class="rounded-lg bg-white p-4">
         <div class="flex items-center justify-between">
           <h3 class="text-lg font-medium text-gray-900">
-            Project Heading
+            {{ projectName || 'Project Name' }}
           </h3>
           <div class="space-x-2">
             <button
@@ -22,7 +22,7 @@
         <!-- Toast content -->
         <div class="mt-2">
           <p class="text-sm text-gray-500">
-            Description
+            {{ projectDescription || 'Project Description' }}
           </p>
         </div>
         <!-- Action buttons -->

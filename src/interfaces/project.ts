@@ -6,7 +6,7 @@ export interface Project {
     projectImages: string[];
     projectInformation: string;
     projectGitHubRepo: string;
-    // steps: string[];
+    liveSite: string | undefined | null
     collapsed?: boolean;
 
 }

@@ -3,12 +3,15 @@
 
 
   <!-- Add ToasterComponent here -->
-<app-toaster
-*ngIf="showToaster"
-(closeToasterEvent)="closeToaster()"
-(openGitHubEvent)="openGitHub(selectedProject)"
-(openLiveWebsiteEvent)="openLiveWebsite(selectedProject)"
+  <app-toaster
+  *ngIf="showToaster"
+  (closeToasterEvent)="closeToaster()"
+  (openGitHubEvent)="openGitHub(selectedProject)"
+  (openLiveWebsiteEvent)="openLiveWebsite(selectedProject)"
+  [projectName]="selectedProject?.projectName"
+  [projectDescription]="selectedProject?.projectInformation"
 ></app-toaster>
+
 
   <div class="max-w-5xl mx-auto px-4">
     <div class="overflow-x-auto">

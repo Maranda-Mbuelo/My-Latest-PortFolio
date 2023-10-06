@@ -47,6 +47,7 @@ export class ProjectsComponent implements OnInit {
     this.selectedProject = project;
     this.showToaster = true;
   }
+  
 
   closeToaster() {
     this.showToaster = false;
@@ -59,13 +60,13 @@ export class ProjectsComponent implements OnInit {
   }
 
   openLiveWebsite(project: Project | null) {
-    if (project && project.projectGitHubRepo) {
-      window.open(project.projectGitHubRepo, '_blank');
+    if (project && project.liveSite) {
+      window.open(project.liveSite, '_blank');
     }
   }
 
   getCssClass(type: string, i: number): string {
-    if (type.toLowerCase() === (`C#`).toLowerCase()) {
+    if (type.toLowerCase() === 'c#') {
       return 'bg-indigo-200 text-indigo-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
     } else if (type.toLowerCase() === 'asp.net') {
       return 'bg-red-200 text-red-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
@@ -77,17 +78,13 @@ export class ProjectsComponent implements OnInit {
       return 'bg-red-200 text-red-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
     } else if (type.toLowerCase() === 'api') {
       return 'bg-pink-200 text-pink-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
-    } else if (type.toLowerCase() === 'JQuery') {
-      return 'bg-pink-200 text-pink-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
+    } else if (type.toLowerCase() === 'jquery') {
+      return 'bg-yellow-200 text-yellow-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
     } else {
-      if(type.toLowerCase() == 'typescript'){
-        return 'bg-yellow-200 text-yellow-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
-      }
-      else{
-        return 'bg-pink-200 text-pink-800 rounded-full px-2 py-1 text-xs font-semibold mr-2'; // Return an empty string for other types
-      }
+      return 'bg-pink-200 text-pink-800 rounded-full px-2 py-1 text-xs font-semibold mr-2'; // Return an empty string for other types
     }
   }
+  
 
 
   getUniqueProjectTypes(projects: Project[]): string[] {
