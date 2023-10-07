@@ -7,6 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ToasterComponent {
   @Input() showToaster: boolean = false;
+  @Input() isAsp: boolean = false;
   @Input() projectName: string | undefined = undefined;
   @Input() projectDescription: string | undefined = undefined;
   @Output() closeToasterEvent = new EventEmitter<void>();

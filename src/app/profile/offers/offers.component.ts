@@ -21,7 +21,7 @@ export class OffersComponent implements OnInit{
     'ASP.NET Core Web Api', 'Entity Framework', 'Angular Material', 'Sync Fusion UI'
   ];
   services: { name: string, percentage: number }[] = [
-    { name: 'Full-Stack web development', percentage: 80 },
+    { name: 'Full-Stack web development', percentage: 85 },
     { name: 'desktop application development', percentage: 65 },
     { name: 'cross platform development', percentage: 50 }
   ];

@@ -36,7 +36,7 @@ export class ProjectsComponent implements OnInit {
   fetchProjects() {
     this.http.get<Project[]>('/assets/projects.json').subscribe((data) => {
       this.projects = data;
-      this.uniqueProjectTypes = this.getUniqueProjectTypes(data); // Add this line
+      this.uniqueProjectTypes = this.getUniqueProjectTypes(data);
     });
   }
   
@@ -77,6 +77,11 @@ export class ProjectsComponent implements OnInit {
     }
   }
 
+  isAspProject(project: Project | null): boolean {
+    return !!project && project.projectType.some(type => type.toLowerCase().includes('asp'));
+}
+
+
   getCssClass(type: string, i: number): string {
     if (type.toLowerCase() === 'c#') {
       return 'bg-indigo-200 text-indigo-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
@@ -84,6 +89,8 @@ export class ProjectsComponent implements OnInit {
       return 'bg-red-200 text-red-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
     } else if (type.toLowerCase() === 'angular' && i === 0) {
       return 'bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
+    } else if (type.toLowerCase() === 'typescript') {
+      return 'bg-gray-200 text-gray-800 rounded-full px-2 py-1 text-xs font-semibold mr-2';
     } else if (type.toLowerCase() === 'angular' && i !== 0) {
       return ''; // Empty string to hide repeated Angular
     } else if (type.toLowerCase() === 'mvc') {
@@ -113,7 +120,6 @@ export class ProjectsComponent implements OnInit {
         }
       });
     });
-  
     return uniqueTypes;
   }
   

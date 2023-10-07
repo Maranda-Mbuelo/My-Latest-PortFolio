@@ -1,0 +1,82 @@
+/* Styling for the ball */
+.ball {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #005da8;
+  border-radius: 50%;
+  animation: fall 2s ease-in-out, bounce 1s ease-in-out 2s 3 alternate;
+  display: flex;
+  justify-content: center; /* Center the arrow horizontally */
+  align-items: center; /* Center the arrow vertically */
+}
+
+/* Styling for the arrow */
+.fa-arrow-down {
+  color: white; /* Set the arrow color to white */
+}
+
+/* Styling for the message */
+.message {
+  width: 330px !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(10%, -50%);
+  background-color: #005da8;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  opacity: 0;
+}
+
+/* Styling for the link */
+.link {
+  color: #007BFF;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+  color: #0056b3; /* Change to the desired hover color */
+}
+
+/* Animation for the ball falling */
+@keyframes fall {
+  0% {
+    transform: translate(700%, -700%);
+  }
+  100% {
+    transform: translate(50%, 50%);
+  }
+}
+
+/* Animation for bouncing effect */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(30px);
+  }
+  25%, 75% {
+    transform: translateY(-80px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+/* Animation for fading in the message */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the fading animation */
+.message {
+  animation: fadeIn 0.5s ease-in-out 5s forwards;
+}

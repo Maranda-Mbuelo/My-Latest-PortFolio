@@ -1,0 +1,9 @@
+<div class="fixed {{ isMobile ? 'top-1/2 left-1/2 transform -translate-x-1/2' : 'bottom-4 left-4' }} z-50" *ngIf="isVisible" id="toaster">
+  <div class="ball">
+    <i class="fa-solid fa-arrow-down text-white"></i> <!-- Add text-white class -->
+    <div class="message" [@fadeInOut]>
+      <span>{{ message }}</span>
+      <a *ngIf="showBuyMeACoffeeLink" href="https://www.buymeacoffee.com/MarandaMbuelo" target="_blank" class="text-blue-500 ml-2 underline">Support me on Buy Me a Coffee</a>
+    </div>
+  </div>
+</div>

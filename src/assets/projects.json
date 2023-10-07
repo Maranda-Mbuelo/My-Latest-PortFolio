@@ -5,10 +5,7 @@
       "projectType": ["HTML", "SCSS", "JQuery", "Javascript"],
       "typeIcon": "Javascript",
       "projectImages": [
-        "https://res.cloudinary.com/ddigkgb9y/image/upload/v1696574969/Screenshot_2023-10-06_084723_ayc8p4.png",
-        "/assets/images/dashboard(2).png",
-        "/assets/images/dashboard(3).png",
-        "/assets/images/dashboard(4).png"
+        "https://res.cloudinary.com/ddigkgb9y/image/upload/v1696574969/Screenshot_2023-10-06_084723_ayc8p4.png"
       ],
       "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Vehicle-Hub-Template.git",
@@ -20,12 +17,9 @@
       "projectType": ["C#", "MVC", "ASP.NET", "API", "Microsoft SQL"],
       "typeIcon": "Angular",
       "projectImages": [
-        "https://carldesouza.com/wp-content/uploads/2020/03/img_5e810b88b3333.png",
-        "/assets/images/dashboard(2).png",
-        "/assets/images/dashboard(3).png",
-        "/assets/images/dashboard(4).png"
+        "https://carldesouza.com/wp-content/uploads/2020/03/img_5e810b88b3333.png"
       ],
-      "projectInformation": "Tshindolo Web App is an online dynamic Angular application that showcases a real-time Park located at Venda/Mafukani. This website offers a captivating experience by displaying stunning pictures and providing various interactive features. <br><br> With Tshindolo Web App, you have the option to enjoy an autoplay slideshow of the park pictures, immersing yourself in the beauty of the surroundings.<br> Alternatively, you can browse the pictures manually using the convenient next and previous buttons, allowing you to explore the park at your own pace. <br><br> Experience the wonders of Tshindolo Park through this engaging web app. Visit the following link to access the application:<br> <a href=\"https://tshindolo-bymbuelo.web.app\">tshindolo-bymbuelo.web.app</a>.",
+      "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Vehicle-Hub-API.git",
       "liveSite": ""
     },
@@ -35,12 +29,9 @@
       "projectType": ["HTML", "SCSS", "JQuery", "Javascript"],
       "typeIcon": "Angular",
       "projectImages": [
-        "https://res.cloudinary.com/ddigkgb9y/image/upload/v1696575189/Screenshot_2023-10-06_085234_wcatmi.png",
-        "/assets/images/dashboard(2).png",
-        "/assets/images/dashboard(3).png",
-        "/assets/images/dashboard(4).png"
+        "https://res.cloudinary.com/ddigkgb9y/image/upload/v1696575189/Screenshot_2023-10-06_085234_wcatmi.png"
       ],
-      "projectInformation": "",
+      "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Phodzo-Clothing-Demo-UI.git",
       "liveSite": "https://maranda-mbuelo.github.io/Phodzo-Clothing-Demo-UI/"
     },
@@ -50,12 +41,9 @@
       "projectType": ["Angular", "Firebase", "Typescript", "Tailwindcss"],
       "typeIcon": "Angular",
       "projectImages": [
-        "/assets/images/dashboard(1).png",
-        "/assets/images/dashboard(2).png",
-        "/assets/images/dashboard(3).png",
-        "/assets/images/dashboard(4).png"
+        "/assets/images/dashboard(1).png"
       ],
-      "projectInformation": "",
+      "projectInformation": " ",
       "projectGitHubRepo": ""
     },
     {
@@ -65,14 +53,11 @@
       "typeIcon": "C#",
       "projectImages": [
         {
-          "image1": "/assets/images/BrightMarsh(1).png",
-          "image2": "/assets/images/blog-app-api(2)",
-          "image3": "/assets/images/blog-app-api(3)",
-          "image4": "/assets/images/blog-app-api(4)"
+          "image1": "/assets/images/BrightMarsh(1).png"
         }
       ],
       
-"projectInformation": "My C# CRUD API serves as the robust backend for my Angular blog app, delivering seamless functionality and efficient database management.<br><br> Leveraging the power of ASP.NET and Microsoft NuGet packages, this API empowers users with comprehensive CRUD (Create, Read, Update, Delete) operations for blog posts. <br>Through a secure connection, it ensures the Angular frontend and backend database seamlessly communicate and interact.<br> <br>Designed for flexibility and scalability, the API streamlines the creation of database tables and supports easy implementation of migrations. <br><br> It excels in providing a rich multimedia experience by enabling blog authors and readers to effortlessly upload pictures for captivating blog posts.With this reliable C# CRUD API, managing your blog app becomes effortless. You can create, edit, or delete blog posts with confidence, knowing that your data is in safe hands. Embrace the seamless integration and power of this API to unlock the full potential of your Angular blog app.To explore more about my C# CRUD API for the blog app, feel free to visit the Github github link: <a href=\"https://github.com/Maranda-Mbuelo\">blog api</a>",
+      "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Marandadtc/BrightMarsh-Blog-API.git",
       "liveSite": ""
     },
@@ -82,12 +67,9 @@
       "projectType": ["C#", "Microsoft SQL", "ASP.NET", "MVC", "API", "Bootstrap"],
       "typeIcon": "Angular",
       "projectImages": [
-        "https://res.cloudinary.com/ddigkgb9y/image/upload/v1696594899/Screenshot_2023-10-06_142114_yfvlp9.png",
-        "/assets/images/dashboard(2).png",
-        "/assets/images/dashboard(3).png",
-        "/assets/images/dashboard(4).png"
+        "https://res.cloudinary.com/ddigkgb9y/image/upload/v1696594899/Screenshot_2023-10-06_142114_yfvlp9.png"
       ],
-      "projectInformation": "",
+      "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Exercise-ASP-.NET-Core-MVC-Web-Application.git",
       "liveSite": ""
     },
@@ -97,12 +79,9 @@
       "projectType": ["C#", "ASP.NET", "MVC", "API", "Sync Fusion Lib", "Microsoft SQL"],
       "typeIcon": "Angular",
       "projectImages": [
-        "https://res.cloudinary.com/practicaldev/image/fetch/s--EcMyfG5N--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8f90iqph1qx5n05lkc64.PNG",
-        "/assets/images/dashboard(2).png",
-        "/assets/images/dashboard(3).png",
-        "/assets/images/dashboard(4).png"
+        "https://res.cloudinary.com/practicaldev/image/fetch/s--EcMyfG5N--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8f90iqph1qx5n05lkc64.PNG"
       ],
-      "projectInformation": "",
+      "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Dashboard-Expense-Tracker-Complete-ASP-.Net-Web-App-MVC.git",
       "liveSite": ""
     },
@@ -127,12 +106,9 @@
       "projectType": ["Angular", "Firebase", "Typescript"],
       "typeIcon": "Angular",
       "projectImages": [
-        "/assets/images/portfolio(1).png",
-        "/assets/images/portfolio(2).png",
-        "/assets/images/portfolio(3).png",
-        "/assets/images/portfolio(4).png"
+        "/assets/images/portfolio(1).png"
       ],
-      "projectInformation": "an Angular project that showcases a sleek and interactive dashboard. I've implemented Firebase Authentication to ensure secure user access and used guards to keep unauthorized users out. One of the highlights is a smart search algorithm that lets users quickly find information in a table. As a self-taught developer, I'm pushing my boundaries to create a seamless user experience. Stay tuned for more updates as I work towards transforming this dashboard into a full CRUD application! 💪",
+      "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/My-Latest-PortFolio.git",
       "liveSite": "https://mbuelo-maranda.web.app/"
     },
@@ -143,13 +119,10 @@
       "typeIcon": "Angular",
       "projectImages": [
         {
-          "image1": "/assets/images/technews(1).png",
-          "image2": "/assets/images/blog-app(2)",
-          "image3": "/assets/images/blog-app(3)",
-          "image4": "/assets/images/blog-app(4)"
+          "image1": "/assets/images/technews(1).png"
         }
       ],
-      "projectInformation": "Tech News is an advanced Angular application that delivers the latest and most relevant news from the rapidly evolving world of technology and beyond. <br>With Tech News, you'll have access to real-time data from reliable APIs, thanks to Angular's robust HTTP capabilities. <br>Explore various news categories tailored to your interests, covering topics like artificial intelligence, cybersecurity, gadgets, and software developments. The user-friendly search feature makes finding specific news articles a breeze. <br>Tech News is a continuous work-in-progress, continuously evolving to provide a seamless user experience. I am currently implementing essential security features, including guards and authentication, to ensure a safe browsing environment for our valued users.",
+      "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Tech-News-App.git",
       "liveSite": ""
       },
@@ -159,12 +132,9 @@
         "projectType": ["Angular", "Typescript", "Firebase"],
         "typeIcon": "Angular",
         "projectImages": [
-          "/assets/images/TshindoloBefore.png",
-          "/assets/images/TshindoloBefore(2).png",
-          "/assets/images/TshindoloNow.png",
-          "/assets/images/TshindoloNow(2).png"
+          "/assets/images/TshindoloBefore.png"
         ],
-        "projectInformation": "Tshindolo Web App is an online dynamic Angular application that showcases a real-time Park located at Venda/Mafukani. This website offers a captivating experience by displaying stunning pictures and providing various interactive features. <br><br> With Tshindolo Web App, you have the option to enjoy an autoplay slideshow of the park pictures, immersing yourself in the beauty of the surroundings.<br> Alternatively, you can browse the pictures manually using the convenient next and previous buttons, allowing you to explore the park at your own pace. <br><br> Experience the wonders of Tshindolo Park through this engaging web app. Visit the following link to access the application:<br> <a href=\"https://tshindolo-bymbuelo.web.app\">tshindolo-bymbuelo.web.app</a>.",
+        "projectInformation": " ",
         "projectGitHubRepo": "https://github.com/Marandadtc/TshindoloApp.git",
         "liveSite": "https://tshindolo-bymbuelo.web.app/TshindoloPark/home"
       },
@@ -175,30 +145,24 @@
         "typeIcon": "Angular",
         "projectImages": [
           {
-            "image1": "/assets/images/blog(1).png",
-            "image2": "/assets/images/blog-app(2)",
-            "image3": "/assets/images/blog-app(3)",
-            "image4": "/assets/images/blog-app(4)"
+            "image1": "/assets/images/blog(1).png"
           }
         ],
-        "projectInformation": "My Blog App is a dynamic, CRUD Angular application that serves as a platform for sharing and managing blog posts. This powerful app is built with Angular, TypeScript and also a C# ASP.Net API as my back-end, providing a seamless user experience and a modern interface. With its CRUD (Create, Read, Update, Delete) functionality, users can effortlessly create new blog posts, read existing ones, update content, and delete posts when needed. <br><br> Behind the scenes, the app is powered by a robust C# API developed using ASP.NET, which handles the backend operations and communicates with the SQL database. The SQL database efficiently stores and manages all blog post data, ensuring data integrity and reliability.<br><br> Find more of My Blog App by visiting the following link: <a href=\"https://github.com/Maranda-Mbuelo\">BrightMarsh Blog</a>.",
+        "projectInformation": " ",
         "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/BrightMarsh-Blog-API.git",
         "liveSite": ""
     },
     {
       "projectName": "Football Prediction Console App",
       "projectStatus": true,
-      "projectType": ["C# Console App"],
+      "projectType": ["C#", "Console App"],
       "typeIcon": "C#",
       "projectImages": [
         {
-          "image1": "/assets/images/footballConsole(2).png",
-          "image2": "/assets/images/football-Prediction(2)",
-          "image3": "/assets/images/football-Prediction(3)",
-          "image4": "/assets/images/football-Prediction(4)"
+          "image1": "/assets/images/footballConsole(2).png"
         }
       ],
-      "projectInformation": "My Football Match Prediction Console App is a powerful tool for analyzing and predicting the outcomes of football matches. Developed in C#, this feature-rich app leverages an API to fetch comprehensive soccer data from a reliable football database. The app utilizes advanced mathematical algorithms and statistical analysis to identify patterns, trends, and key factors that influence match results. By applying cutting-edge prediction models, the app generates accurate forecasts for upcoming matches, empowering users to make informed decisions.<br><br> In the development of this console app, I utilized various technologies and libraries, including C#, .NET framework, and Newtonsoft.Json. The integration of Newtonsoft.Json enables seamless handling of JSON data, allowing the app to efficiently process and extract relevant information from the API responses. Furthermore, the app provides functionalities to write and read data in JSON format, facilitating the management and storage of prediction data.<br><br> My Football Match Prediction Console App offers a user-friendly interface, making it easy for users to input match data, view predictions, and explore detailed insights. Users can also customize prediction settings, including factors such as team form and match conditions, to enhance the accuracy of the predictions.<br><br> Explore the capabilities of My Football Match Prediction Console App by visiting the following link: <a href=\"https://github.com/Maranda-Mbuelo\">Football Console App</a>.",
+      "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Marandadtc/FootBall-Prediction.git",
       "liveSite": ""
     },
@@ -209,13 +173,10 @@
       "typeIcon": "Angular",
       "projectImages": [
         {
-          "image1": "/assets/images/weather(1).png",
-          "image2": "/assets/images/weather(2)",
-          "image3": "/assets/images/weather(3)",
-          "image4": "/assets/images/weather(4)"
+          "image1": "/assets/images/weather(1).png"
         }
       ],
-      "projectInformation": "My Weather Forecast Web App is a feature-rich Angular application that provides real-time weather information for various locations. Powered by TypeScript, this intuitive app seamlessly fetches weather data from a reliable API, offering users comprehensive forecasts for different regions. The app's interactive interface allows users to explore detailed weather data, including temperature, humidity, wind speed, and more.With advanced data processing and analysis, My Weather Forecast Web App identifies patterns and trends that influence weather conditions. Utilizing cutting-edge algorithms, the app generates accurate forecasts, empowering users to plan their activities with confidence.In the development of this web app, I harnessed the power of Angular and TypeScript, alongside various supporting libraries. The seamless integration of these technologies enables efficient data handling and ensures a smooth user experience. Additionally, the app leverages charting libraries to visually represent weather trends, enhancing the presentation of forecast data.My Weather Forecast Web App features a user-friendly design, making it simple to navigate and customize settings. Users can easily switch between locations and view weather details for different times of the day. Stay ahead of changing weather conditions with this powerful and informative web app.Experience the convenience of My Weather Forecast Web App by visiting the following link: <a href=\"https://github.com/Maranda-Mbuelo\">Weather Forecast App. </a>",
+      "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/AngularCLI-Weather-Web-App.git",
       "liveSite": "https://weather-app-55041.web.app/home"
     },
@@ -226,13 +187,10 @@
         "typeIcon": "C#",
         "projectImages": [
             {
-                "image1": "/assets/images/calculator(1).png",
-                "image2": "/assets/images/calculator(2).png",
-                "image3": "/assets/images/calculator(3).png",
-                "image4": "/assets/images/calculator(4).png"
+                "image1": "/assets/images/calculator(1).png"
             }
         ],
-        "projectInformation": "The Calculator GUI App is a desktop application developed using C# and Windows Forms. It provides a user-friendly interface for performing basic mathematical calculations. With a visually appealing design and intuitive functionality, the app allows users to input numbers, perform calculations, and view the results in real-time.<br><br>The Calculator GUI App supports various arithmetic operations, including addition, subtraction, multiplication, and division. It also includes additional features such as memory storage and retrieval, decimal precision control, and a history log of previous calculations. The app leverages event-driven programming and object-oriented principles to ensure a responsive and efficient user experience.<br><br>Explore the capabilities of the Calculator GUI App by downloading it from the following link: <a href=\"https://github.com/Maranda-Mbuelo\">Calculator App</a>.",
+        "projectInformation": " ",
         "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/My-Calculator.git",
         "liveSite": ""
     },
@@ -243,13 +201,10 @@
         "typeIcon": "C#",
         "projectImages": [
             {
-                "image1": "/assets/images/ticO.png",
-                "image2": "/assets/images/ticStart.png",
-                "image3": "/assets/images/ticX.png",
-                "image4": "/assets/images/ticO.png"
+                "image1": "/assets/images/ticO.png"
             }
         ],
-        "projectInformation": "My Tic Tac Toe game, developed using C#, offers an exciting gaming experience that combines mathematics and critical thinking. This interactive game challenges players to strategically place their X or O marks on a 3x3 grid, aiming to create a winning combination before their opponent. With an intuitive user interface and engaging gameplay, the Tic Tac Toe game tests players' logic, decision-making, and problem-solving skills. It implements mathematical algorithms to determine winning moves and block opponents from achieving victory. Whether playing against the computer or challenging friends, this C# Tic Tac Toe game guarantees hours of fun and intellectual stimulation.<br><br>You can enjoy playing my Tic Tac Toe game by visiting the following link: <a href=\"https://github.com/Maranda-Mbuelo\">tic-tac-toe-game</a> <br> Just clone my Repo and run the solution and enjoy my Game",
+        "projectInformation": " ",
         "projectGitHubRepo": "https://github.com/Marandadtc/My-Tic-Tac-Toe-Game.git",
         "liveSite": ""
     }
