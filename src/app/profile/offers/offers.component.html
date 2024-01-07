@@ -1,34 +1,67 @@
 <app-navbar *ngIf="navigationVisibility" [links]="navigation"></app-navbar>
-<div class="min-h-screen bg-gradient-to-tr from-blue-500 to-purple-500 p-4">
-  <div class="text-white text-center py-12">
-    <h1 class="text-4xl md:text-6xl font-bold">{{ heading }}</h1>
-    <p class="mt-4 text-lg">{{ firstParagraph }}</p>
+<div class="min-h-screen bg-gray-100 p-4">
+  <div class="text-gray-600 text-center py-12">
+    <h1 class="text-4xl md:text-4xl font-bold">{{ heading | titlecase }}</h1>
+    <!-- <p class="mt-4 text-lg">{{ firstParagraph }}</p> -->
   </div>
 
   <div class="mt-8 pl-4 pr-4">
-    <div class="flex flex-wrap -mx-4">
+    <div class="flex flex-wrap -mx-4 justify-center items-center gap-2">
       <ng-container *ngFor="let service of services">
-        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-          <div class="bg-white shadow-lg rounded-lg p-6">
-            <h2 class="text-xl md:text-1xl font-bold text-gray-800">{{ service.name | titlecase }}</h2>
-            <div class="h-3 relative mt-2 bg-gray-300 rounded-full">
-              <div class="h-full bg-gradient-to-r from-blue-500 to-orange-500 rounded-full" [style.width.%]="service.percentage"></div>
+        <div class="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:shadow-xl">
+          <svg class="mx-auto mt-8 h-16 w-16" width="50px" height="50px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"><path transform="translate(-2.4, -2.4), scale(1.7999999999999998)" fill="#919292" d="M9.166.33a2.25 2.25 0 00-2.332 0l-5.25 3.182A2.25 2.25 0 00.5 5.436v5.128a2.25 2.25 0 001.084 1.924l5.25 3.182a2.25 2.25 0 002.332 0l5.25-3.182a2.25 2.25 0 001.084-1.924V5.436a2.25 2.25 0 00-1.084-1.924L9.166.33z" strokewidth="0"></path></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M17 7.82959L18.6965 9.35641C20.239 10.7447 21.0103 11.4389 21.0103 12.3296C21.0103 13.2203 20.239 13.9145 18.6965 15.3028L17 16.8296" stroke="#f1f1f1" stroke-width="1.008" stroke-linecap="round"></path> <path d="M13.9868 5L12.9934 8.70743M11.8432 13L10.0132 19.8297" stroke="#f1f1f1" stroke-width="1.008" stroke-linecap="round"></path> <path d="M7.00005 7.82959L5.30358 9.35641C3.76102 10.7447 2.98975 11.4389 2.98975 12.3296C2.98975 13.2203 3.76102 13.9145 5.30358 15.3028L7.00005 16.8296" stroke="#f1f1f1" stroke-width="1.008" stroke-linecap="round"></path> </g></svg>
+          <h1 class="mt-2 text-center text-2xl font-bold text-gray-500">{{ service.name | titlecase }}</h1>
+          <p class="my-4 text-center text-sm text-gray-500"><span class="text-gray-600 text-lg font-bold">{{'[tech stack]: ' | titlecase}}</span> {{ service.techStack }}</p>
+          <div class="space-x-4 bg-gray-100 py-4 text-center">
+            <div class="flex items-center p-3">
+              <h4
+                class="font-medium text-sm mr-auto text-gray-700 flex items-center"
+              >
+                Rating
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ml-2 shrink-0 w-5 h-5 text-gray-500"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                  <path d="M12 9h.01"></path>
+                  <path d="M11 12h1v4h1"></path>
+                </svg>
+              </h4>
+              <span class="px-2 py-1 rounded-lg bg-gray-50 text-gray-500 text-xs">
+                6.2 / 10
+              </span>
+            </div>
+            <div class="overflow-hidden bg-gray-200 h-1.5 rounded-full w-[90%]">
+              <span
+                class="h-full bg-gray-500 w-full block rounded-full"
+                style="width: 62%"
+              ></span>
             </div>
           </div>
         </div>
       </ng-container>
-    </div>
   </div>
   
 
   <div class="mt-8">
     <div class="bg-white shadow-lg rounded-lg p-4 m-4">
-      <h3 class="text-2xl font-bold text-gray-800 mb-4">Languages and Frameworks I Know:</h3>
+      <h3 class="text-2xl font-bold text-gray-700 mb-4">Languages and Frameworks I Know:</h3>
       <div class="flex flex-wrap">
         <ng-container *ngFor="let language of languages">
-          <div class="bg-blue-500 text-white rounded-full px-4 py-2 m-2 text-sm font-semibold">{{ language | titlecase }}</div>
+          <div class="bg-gray-500 text-white rounded-md px-4 py-2 m-2 text-sm font-semibold">{{ language | titlecase }}</div>
         </ng-container>
       </div>
     </div>
   </div>  
 </div>
+
+<app-footer *ngIf="navigationVisibility"></app-footer>

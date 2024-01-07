@@ -20,7 +20,8 @@ export class HomeComponent implements OnInit {
   constructor(private method: AppComponent, private textwriterService: TextwriterService) { }
 
   ngOnInit(): void {
-    this.video = 'https://res.cloudinary.com/ddigkgb9y/video/upload/v1696508824/g4s2fhyz4woxnez5ci0p.mp4?_s=vp-1.7.0';
+    // this.video = 'https://res.cloudinary.com/ddigkgb9y/video/upload/v1696508824/g4s2fhyz4woxnez5ci0p.mp4?_s=vp-1.7.0';
+    this.video = 'https://youtu.be/humWM1PysMA?si=_lJ-Au9_W2AeoQLA';
     this.method.fetchNavigation('Home', this.navigation);
     
     const option: any[] = [

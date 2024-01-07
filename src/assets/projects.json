@@ -1,17 +1,5 @@
 [
     {
-      "projectName": "Vehicle Hub UI Demo",
-      "projectStatus": true,
-      "projectType": ["HTML", "SCSS", "JQuery", "Javascript"],
-      "typeIcon": "Javascript",
-      "projectImages": [
-        "https://res.cloudinary.com/ddigkgb9y/image/upload/v1696574969/Screenshot_2023-10-06_084723_ayc8p4.png"
-      ],
-      "projectInformation": " ",
-      "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Vehicle-Hub-Template.git",
-      "liveSite": "https://maranda-mbuelo.github.io/Vehicle-Hub-Template/index.html"
-    },
-    {
       "projectName": "Vehicle Hub API",
       "projectStatus": true,
       "projectType": ["C#", "MVC", "ASP.NET", "API", "Microsoft SQL"],
@@ -22,18 +10,6 @@
       "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Vehicle-Hub-API.git",
       "liveSite": ""
-    },
-    {
-      "projectName": "Phodzo clothing",
-      "projectStatus": true,
-      "projectType": ["HTML", "SCSS", "JQuery", "Javascript"],
-      "typeIcon": "Angular",
-      "projectImages": [
-        "https://res.cloudinary.com/ddigkgb9y/image/upload/v1696575189/Screenshot_2023-10-06_085234_wcatmi.png"
-      ],
-      "projectInformation": " ",
-      "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Phodzo-Clothing-Demo-UI.git",
-      "liveSite": "https://maranda-mbuelo.github.io/Phodzo-Clothing-Demo-UI/"
     },
     {
       "projectName": "Authenticated Dashboard",
@@ -59,6 +35,21 @@
       
       "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Marandadtc/BrightMarsh-Blog-API.git",
+      "liveSite": ""
+    },
+    {
+      "projectName": "Car Posting Blog Api",
+      "projectStatus": true,
+      "projectType": ["C#", ".NET CORE", "ASP.NET", "API", "Microsoft SQL"],
+      "typeIcon": "C#",
+      "projectImages": [
+        {
+          "image1": "/assets/images/BrightMarsh(1).png"
+        }
+      ],
+      
+      "projectInformation": " ",
+      "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/CarWebAPI.git",
       "liveSite": ""
     },
     {
@@ -113,6 +104,30 @@
       "liveSite": "https://mbuelo-maranda.web.app/"
     },
     {
+      "projectName": "Vehicle Hub UI Demo",
+      "projectStatus": true,
+      "projectType": ["HTML", "SCSS", "JQuery", "Javascript"],
+      "typeIcon": "Javascript",
+      "projectImages": [
+        "https://res.cloudinary.com/ddigkgb9y/image/upload/v1696574969/Screenshot_2023-10-06_084723_ayc8p4.png"
+      ],
+      "projectInformation": " ",
+      "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Vehicle-Hub-Template.git",
+      "liveSite": "https://maranda-mbuelo.github.io/Vehicle-Hub-Template/index.html"
+    },
+    {
+      "projectName": "Phodzo clothing",
+      "projectStatus": true,
+      "projectType": ["HTML", "SCSS", "JQuery", "Javascript"],
+      "typeIcon": "Angular",
+      "projectImages": [
+        "https://res.cloudinary.com/ddigkgb9y/image/upload/v1696575189/Screenshot_2023-10-06_085234_wcatmi.png"
+      ],
+      "projectInformation": " ",
+      "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Phodzo-Clothing-Demo-UI.git",
+      "liveSite": "https://maranda-mbuelo.github.io/Phodzo-Clothing-Demo-UI/"
+    },
+    {
       "projectName": "Tech News App",
       "projectStatus": true,
       "projectType": ["Angular", "Typescript", "Firebase"],
@@ -125,32 +140,32 @@
       "projectInformation": " ",
       "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/Tech-News-App.git",
       "liveSite": ""
-      },
-      {
-        "projectName": "Tshindolo Park Web App",
-        "projectStatus": false,
-        "projectType": ["Angular", "Typescript", "Firebase"],
-        "typeIcon": "Angular",
-        "projectImages": [
-          "/assets/images/TshindoloBefore.png"
-        ],
-        "projectInformation": " ",
-        "projectGitHubRepo": "https://github.com/Marandadtc/TshindoloApp.git",
-        "liveSite": "https://tshindolo-bymbuelo.web.app/TshindoloPark/home"
-      },
-      {
-        "projectName": "Blog App",
-        "projectStatus": false,
-        "projectType": ["Angular", "C#", "ASP.NET"],
-        "typeIcon": "Angular",
-        "projectImages": [
-          {
-            "image1": "/assets/images/blog(1).png"
-          }
-        ],
-        "projectInformation": " ",
-        "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/BrightMarsh-Blog-API.git",
-        "liveSite": ""
+    },
+    {
+      "projectName": "Tshindolo Park Web App",
+      "projectStatus": false,
+      "projectType": ["Angular", "Typescript", "Firebase"],
+      "typeIcon": "Angular",
+      "projectImages": [
+        "/assets/images/TshindoloBefore.png"
+      ],
+      "projectInformation": " ",
+      "projectGitHubRepo": "https://github.com/Marandadtc/TshindoloApp.git",
+      "liveSite": "https://tshindolo-bymbuelo.web.app/TshindoloPark/home"
+    },
+    {
+      "projectName": "Blog App Api",
+      "projectStatus": false,
+      "projectType": ["Angular", "C#", "ASP.NET"],
+      "typeIcon": "Angular",
+      "projectImages": [
+        {
+          "image1": "/assets/images/blog(1).png"
+        }
+      ],
+      "projectInformation": " ",
+      "projectGitHubRepo": "https://github.com/Maranda-Mbuelo/BrightMarsh-Blog-API.git",
+      "liveSite": ""
     },
     {
       "projectName": "Football Prediction Console App",

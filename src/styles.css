@@ -15,4 +15,16 @@ body {
     height: 100%!important;
     margin: 0!important;
     padding: 0!important;
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #504e70;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: rgb(150, 148, 148);
+    border-radius: 12px;
 }

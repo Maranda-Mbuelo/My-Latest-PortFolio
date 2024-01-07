@@ -3,7 +3,7 @@
   position: relative;
   width: 50px;
   height: 50px;
-  background-color: #005da8;
+  background-color: #747677;
   border-radius: 50%;
   animation: fall 2s ease-in-out, bounce 1s ease-in-out 2s 3 alternate;
   display: flex;
@@ -23,7 +23,7 @@
   top: 50%;
   left: 50%;
   transform: translate(10%, -50%);
-  background-color: #005da8;
+  background-color: #747677;
   padding: 10px;
   border-radius: 5px;
   color: white;
@@ -40,7 +40,7 @@
 }
 
 .link:hover {
-  color: #0056b3; /* Change to the desired hover color */
+  color: #58595a; /* Change to the desired hover color */
 }
 
 /* Animation for the ball falling */

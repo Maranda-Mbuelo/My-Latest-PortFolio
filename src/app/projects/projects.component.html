@@ -1,6 +1,6 @@
 <app-navbar *ngIf="navigationVisibility" [links]="navigation"></app-navbar>
-<div *ngIf="projects" class="bg-gradient-to-br from-blue-500 to-purple-500 min-h-screen p-2">
-  <h2 class="text-2xl md:text-4xl font-bold text-gray-200 mb-4 text-center py-4">Projects</h2>
+<div *ngIf="projects" class="bg-gray-100 min-h-screen p-2">
+  <h2 class="text-2xl md:text-4xl font-bold text-gray-600 mb-4 text-center py-4">Projects</h2>
 
 
   <app-toaster
@@ -16,20 +16,20 @@
 
   <div class="max-w-5xl mx-auto px-4">
     <div class="overflow-x-auto">
-      <table class="min-w-full bg-white rounded-lg shadow-lg">
+      <table class="min-w-full bg-gray-300 rounded-lg shadow-lg overflow-hidden">
         <!-- Table header -->
         <thead>
-          <tr>
-            <th class="py-3 px-6 text-left" [innerHTML]="'Project Image' | titlecase"></th>
-            <th class="py-3 px-6 text-left" [innerHTML]="'Technologies Used' | titlecase"></th>
-            <th class="py-3 px-6 text-left" [innerHTML]="'Status' | titlecase"></th>
-            <th class="py-3 px-6 text-left" [innerHTML]="'Project Name' | titlecase"></th>
-            <th class="py-3 px-6 text-left" [innerHTML]="'Action' | titlecase"></th>
+          <tr class="bg-gray-400 rounded-md">
+            <th class="py-3 px-6 text-left text-gray-100" [innerHTML]="'Project Image' | titlecase"></th>
+            <th class="py-3 px-6 text-left text-gray-100" [innerHTML]="'Technologies Used' | titlecase"></th>
+            <th class="py-3 px-6 text-left text-gray-100" [innerHTML]="'Status' | titlecase"></th>
+            <th class="py-3 px-6 text-left text-gray-100" [innerHTML]="'Project Name' | titlecase"></th>
+            <th class="py-3 px-6 text-left text-gray-100" [innerHTML]="'Action' | titlecase"></th>
           </tr>
         </thead>
         <!-- Table body -->
         <tbody>
-          <tr *ngFor="let project of projects" class="border-b border-gray-200 hover:bg-gray-100 fade-in">
+          <tr *ngFor="let project of projects" class="border-b border-r border-l border-gray-200 hover:bg-gray-100 fade-in-out">
             <td class="py-3 px-6 text-left">
               <img [src]="getProjectImage(project)" alt="Project Image" class="w-20 h-12 object-cover">
             </td>
@@ -40,25 +40,22 @@
                 </span>
               </ng-container>
             </td>
-            
-            
-            
+                         
             <td class="py-3 px-6 text-left">
               <span 
                 [ngClass]="{
                   'bg-green-200 text-green-800': project.projectStatus, 
                   'bg-red-200 text-red-800': !project.projectStatus
                 }"
-                class="inline-block rounded-full px-2 py-1 text-xs font-semibold"
-              >
+                class="inline-block rounded-full px-2 py-1 text-xs font-semibold">
               {{ project.projectStatus ? 'Completed' : 'in_Progress' }}  
             </span>
             </td>
             <td class="py-3 px-6 text-left">
-              <div class="truncate"><p>{{ project.projectName | truncate: 25 }}</p></div>
+              <div class="truncate text-cyan-800"><p class="shadow-md ">{{ project.projectName | truncate: 25 }}</p></div>
             </td>
             <td class="py-3 px-6 text-left">
-              <button class="py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300 ease-in-out" (click)="openToaster(project)">View</button>
+              <button class="py-2 px-4 bg-gray-700 text-white shadow-md rounded-md hover:bg-gray-800 transition duration-300 ease-in-out" (click)="openToaster(project)">View</button>
             </td>
           </tr>
         </tbody>
@@ -66,3 +63,5 @@
     </div>
   </div>
 </div>
+
+<app-footer *ngIf="navigationVisibility"></app-footer>

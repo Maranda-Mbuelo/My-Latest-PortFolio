@@ -1,23 +1,23 @@
-<section class="min-h-screen flex items-center justify-center bg-gray-800">
-  <button class="absolute top-4 left-4 bg-blue-500 text-indigo-300 hover:text-indigo-200 px-4 py-2 rounded-md shadow-md" (click)="goBack()" >Back</button>
+<section class="min-h-screen flex items-center justify-center bg-gray-100">
+  <button class="absolute w-[7rem] top-4 left-4 space-x-2 bg-gray-600 text-white font-medium rounded-md px-4 py-2 transition duration-300 ease-in-out hover:bg-gray-900" (click)="goBack()" >Back</button>
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center">
-        <h1 class="text-4xl md:text-6xl font-bold text-indigo-300">Contact Me</h1>
-        <p class="mt-4 text-lg md:text-xl text-indigo-200">Feel free to reach out to me using the contact information below.</p>
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-600 select-none">Contact Me</h1>
+        <p class="mt-4 text-lg md:text-xl text-gray-500 select-none">Feel free to reach out to me using the clickable contact information below.</p>
       </div>
       <div class="mt-12 space-y-4">
         <div class="flex items-center space-x-4">
           <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
           </svg>
-          <i class="fa-solid fa-phone" style="color: orange;"></i> <a href="tel:+27787722573" class="text-lg text-gray-400 hover:text-indigo-300">+27 787 722 573</a>
+          <i class="fa-solid fa-phone" style="color: rgb(49, 49, 49);"></i> <a href="tel:+27787722573" class="text-lg text-gray-400 hover:text-indigo-300">+27 787 722 573</a>
         </div>
         
         <div class="flex items-center space-x-4">
           <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
           </svg>
-          <i class="fa-brands fa-whatsapp" style="color: orange;"></i>
+          <i class="fa-brands fa-whatsapp" style="color: rgb(49, 49, 49);"></i>
           <a href="https://api.whatsapp.com/send?phone=27673866562&text=Hello%20there,%20I%20want%20to%20get%20in%20touch%20with%20you!" class="text-lg text-gray-500 hover:text-indigo-300">+27 673 866 562</a>
         </div>
         
@@ -25,23 +25,23 @@
           <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
           </svg>
-          <i class="fa-solid fa-envelope" style="color: orange;"></i> <a href="mailto:brightmarsh.m@gmail.com" class="text-lg text-gray-600 hover:text-indigo-300">brightmarsh.m@gmail.com</a>
+          <i class="fa-solid fa-envelope" style="color: rgb(49, 49, 49);"></i> <a href="mailto:brightmarsh.m@gmail.com" class="text-lg text-gray-600 hover:text-indigo-300">marandambuelo3@gmail.com</a>
         </div>
 
         <div class="flex items-center space-x-4 mt-4">
           <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
           </svg>
-          <a href="/assets/Mbuelo Maranda_CV.pdf" download class="text-lg text-gray-400 hover:text-gray-100">Click To Download My CV</a>
+          <a href="/assets/Mbuelo Maranda_CV.pdf" download class="text-lg text-gray-400 hover:text-gray-500">Click To Download My CV</a>
         </div>
 
       </div>
       <div class="mt-12 flex justify-center">
-        <button class="flex items-center space-x-2 bg-indigo-600 text-white font-medium rounded-md px-4 py-2 transition duration-300 ease-in-out hover:bg-indigo-700" (click)="openModal()">
+        <button class="flex items-center space-x-2 bg-gray-600 text-white font-medium rounded-md px-4 py-2 transition duration-300 ease-in-out hover:bg-gray-900" (click)="openModal()">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
             </svg>
-            <span> <i class="fa-solid fa-message" style="color: orange"></i>   Leave a Message</span>
+            <span> <i class="fa-solid fa-message" style="color: rgb(211, 211, 211)"></i>   Leave a Message</span>
           </button>
           
       </div>
@@ -74,7 +74,7 @@
     
           <div class="flex flex-col md:flex-row md:justify-end mt-6 md:space-x-4">
             <button type="button" (click)="showModal = false" class="bg-red-600 text-white font-medium rounded-md px-4 py-2 transition duration-300 ease-in-out hover:bg-red-700 md:mt-0">Close</button>
-            <button type="submit" class="bg-indigo-600 text-white font-medium rounded-md px-4 py-2 transition duration-300 ease-in-out hover:bg-indigo-700 md:mt-0 mt-4 w-full md:w-auto">
+            <button type="submit" class="bg-gray-700 text-white font-medium rounded-md px-4 py-2 transition duration-300 ease-in-out hover:bg-gray-900 md:mt-0 mt-4 w-full md:w-auto">
               <ng-container *ngIf="!isLoading">Submit</ng-container>
               <ng-container *ngIf="isLoading">Loading...</ng-container>
             </button>
@@ -86,4 +86,6 @@
   
     
   </section>
+
+  <app-footer></app-footer>
   

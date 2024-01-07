@@ -18,6 +18,8 @@ import { AdminAddProjectComponent } from './admin/admin-add-project/admin-add-pr
 import { TruncatePipe } from './truncate.pipe';
 import { ToasterComponent } from './toaster/toaster.component';
 import { MessagetoasterComponent } from './messagetoaster/messagetoaster.component';
+import { FooterComponent } from './footer/footer.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { MessagetoasterComponent } from './messagetoaster/messagetoaster.compone
     AdminAddProjectComponent,
     TruncatePipe,
     ToasterComponent,
-    MessagetoasterComponent
+    MessagetoasterComponent,
+    FooterComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

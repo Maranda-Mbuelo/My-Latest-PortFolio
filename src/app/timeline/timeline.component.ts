@@ -10,6 +10,7 @@ export class TimelineComponent {
   timelineArray: any = [
   {
     language: `C++`,
+    dates: 'march 2022 - may 2022',
     paragraph: `I started my coding journey with C++, which was my first programming language and remains one of my favorites. During my learning process, I gained a solid understanding of fundamental concepts such as Data Types, which I am proficient in. As I progressed, I delved into object-oriented programming, where I had a lot of fun exploring the world of objects and their interactions. Decision-making using conditional statements became second nature to me, followed by the implementation of functions and the power of iteration.
 
     One of the highlights of my C++ learning experience was mastering classes, which gave me a strong grasp of object-oriented principles. I also expanded my knowledge by exploring vectors and arrays, which provided me with a versatile approach to handling collections of data. Inheritance allowed me to create hierarchies and build upon existing code, further enhancing my understanding of code organization.
@@ -20,6 +21,7 @@ export class TimelineComponent {
   },
   {
     language: `C#`,
+    dates: 'october 2022 - current',
     paragraph: `C# became my second programming language, and I found it to be equally fascinating as C++. Alongside familiar concepts like Data Types, object-oriented programming, and decision-making, C# introduced me to new possibilities, such as developing desktop applications and working with ASP.NET.
 
     With C#, I expanded my coding horizons by creating desktop applications, which allowed me to build user-friendly and interactive software. Learning about event-driven programming and GUI frameworks opened up a world of possibilities for creating intuitive and visually appealing applications.
@@ -32,6 +34,7 @@ export class TimelineComponent {
   },
   {
     language: `SQL`,
+    dates: ' february 2023 - current',
     paragraph: `SQL (Structured Query Language) became my third programming language, and it opened up a whole new world of data management and database querying. With SQL, I learned how to interact with databases, design relational schemas, and perform powerful data manipulations.
 
     I gained proficiency in writing SQL queries to retrieve, insert, update, and delete data from databases. Understanding concepts like tables, relationships, and indexes allowed me to design efficient database structures that could handle vast amounts of data.
@@ -44,6 +47,7 @@ export class TimelineComponent {
   },
   {
     language: `HTML and CSS`,
+    dates: 'may 2022 - current',
     paragraph: `HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) became my fourth learning language, and they are the foundation of web development. HTML allowed me to structure the content of web pages, creating elements like headings, paragraphs, lists, and links.
 
     With CSS, I learned how to style and visually enhance HTML elements. I gained proficiency in creating layouts, applying colors, adjusting typography, and adding visual effects. CSS empowered me to make web pages visually appealing, engaging, and responsive.
@@ -56,6 +60,7 @@ export class TimelineComponent {
   },
   {
     language: `Angular and TypeScript`,
+    dates: 'april 2023 - current',
     paragraph: `Angular and TypeScript form a powerful combination for building modern web applications. Angular is a popular front-end framework that allows me to create dynamic and scalable applications with ease.
 
     With Angular, I can leverage TypeScript, a superset of JavaScript, which brings strong typing, enhanced tooling, and improved developer experience. TypeScript provides me with features like static typing, classes, interfaces, and modules, making my code more maintainable and less prone to errors.
@@ -90,7 +95,7 @@ export class TimelineComponent {
   ]
 
   calculateTopPosition(index: number): string {
-    const spacing = 70; // You can adjust this value for the desired spacing between icons
+    const spacing = 70;
     const topPosition = `calc(40% + ${index * spacing}px)`;
     return topPosition;
   }
